@@ -1,7 +1,9 @@
+import Blob from "@/components/blob";
+
 export default function Home() {
   return (
     <div className="">
-    <p>home</p>
+      <Blob />
     </div>
   );
 }
