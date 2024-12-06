@@ -5,6 +5,7 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --main-theme: #4f46e5;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -18,4 +19,26 @@ body {
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+/* hover on items */
+@layer utilities {
+  .hover-link {
+    position: relative;
+  }
+
+  .hover-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--main-theme);
+    transition: all 0.3s ease;
+  }
+
+  .hover-link:hover::after {
+    width: 100%;
+  }
 }
