@@ -20,6 +20,7 @@ export default {
       "5": "1.5rem",
       "6": "1.75rem",
       "7": "2rem",
+      "8": "2.5rem",
     },
     fontSize: {
       "xxl": ["6.75rem", "auto"],
