@@ -25,6 +25,7 @@ body {
 @layer utilities {
   .hover-link {
     position: relative;
+    padding-bottom: 3px;
   }
 
   .hover-link::after {
@@ -33,12 +34,54 @@ body {
     left: 0;
     bottom: 0;
     width: 0;
-    height: 2px;
+    height: 1.5px;
     background-color: var(--main-theme);
     transition: all 0.3s ease;
+    border-radius: 99px;
   }
 
   .hover-link:hover::after {
     width: 100%;
+  }
+}
+
+.nav-list.active {
+  height: calc((((var(--padding) * 2) + (var(--font-size) * 1.5))) * var(--childenNumber));
+}
+
+.menu.active span:nth-child(1) {
+  transform: rotate(45deg);
+  background-color: var(--main-theme);
+}
+
+.menu.active span:nth-child(2) {
+  transform: scale(0);
+}
+
+.menu.active span:nth-child(3) {
+  transform: rotate(-45deg);
+  background-color: var(--main-theme);
+}
+
+@media (max-width: 910px) {
+    .nav-list {
+      --padding: 26px;
+      --font-size: 1.25rem;
+      list-style: none;
+      display: flex;
+      align-items: center;
+      font-size: var(--font-size);
+      background-color: var(--background);
+      overflow-y: hidden;
+      transition: height 1s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+      height: 0;
+      flex-direction: column;
+      position: absolute;
+      top: 96px;
+      left: 0;
+      width: 100%;
+    }
+  .menu {
+    display: flex;
   }
 }
