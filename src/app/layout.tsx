@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "../styles/globals.css";
 import Header from "../components/header";
+import Blob from "@/components/blob";
 
 export const metadata: Metadata = {
   title: "Home | Ranim Mohammad",
@@ -17,7 +18,10 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <Header />
-        <main className="overflow-hidden">{children}</main>
+        <main className="overflow-hidden relative">
+          <Blob />
+          {children}
+        </main>
       </body>
     </html>
   );
