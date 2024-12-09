@@ -3,16 +3,9 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #101010;
+  --foreground: white;
   --main-theme: #4f46e5;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
 }
 
 body {
@@ -20,7 +13,9 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
-
+header {
+  background: var(--background);
+}
 /* hover on items */
 @layer utilities {
   .hover-link {
@@ -71,7 +66,6 @@ body {
       display: flex;
       align-items: center;
       font-size: var(--font-size);
-      background-color: var(--background);
       overflow-y: hidden;
       transition: height 1s cubic-bezier(0.68, -0.55, 0.27, 1.55);
       height: 0;
