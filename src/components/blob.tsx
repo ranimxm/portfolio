@@ -62,6 +62,6 @@ export default function Blob() {
     }, []);
 
     return (
-        <div ref={containerRef} className="w-full h-full relative"/>
+        <div ref={containerRef} className="w-full h-full fixed top-5"/>
     );
 };
