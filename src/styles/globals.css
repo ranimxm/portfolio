@@ -13,9 +13,6 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
-header {
-  background: var(--background);
-}
 /* hover on items */
 @layer utilities {
   .hover-link {
