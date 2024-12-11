@@ -18,7 +18,7 @@ export default function RootLayout({
     <html lang="en">
       <body className="bg-background">
         <Header />
-        <main className="overflow-hidden h-full w-full flex flex-row">
+        <main className="overflow-hidden h-full w-full flex flex-col">
           {children}
         </main>
           <Blob />

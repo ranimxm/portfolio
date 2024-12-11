@@ -22,7 +22,7 @@ export default function Header() {
   }, []);
 
   return (
-    <header className="flex items-center justify-between p-4 px-8 text-h4 text-white z-[99] relative">
+    <header className="flex items-center justify-between p-4 px-8 text-h3 text-white z-[99] relative">
       <div className="flex flex-col items-start justify-center">
         <p>Ranim</p>
         <p>Mohammad</p>

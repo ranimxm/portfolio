@@ -6,6 +6,7 @@
   --background: #101010;
   --foreground: white;
   --main-theme: #4f46e5;
+  --border-line: #00000026;
 }
 
 body {

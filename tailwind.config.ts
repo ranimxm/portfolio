@@ -11,6 +11,7 @@ export default {
       colors: {
         background: "var(--background)",
         mainTheme: "var(--main-theme)",
+        borderLine: "var(--border-line)",
       },
     },
     spacing: {
