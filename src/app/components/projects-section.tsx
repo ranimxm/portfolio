@@ -1,3 +1,5 @@
+import { ChevronRight } from "@/assets/icons/chevronRight";
+
 export default function ProjectsSection() {
     return (
         <section className="w-full flex flex-col justify-center items-start bg-white border-borderLine border-t-2">
@@ -11,20 +13,23 @@ export default function ProjectsSection() {
                     <section className="border-borderLine border-r-2 border-l-2 w-full
                     relative after:absolute after:content-[''] after:w-[300dvw] after:bottom-[0] after:h-[2px] after:left-[-200px] after:bg-borderLine
                     ">
-                        <ol className="flex justify-center w-full gap-[2dvw] flex-col">
-                            <li className="flex flex-col border-b-2 border-borderLine">
-                                <div className="p-[3em] px-[5dvw] ">
-                                    hiiii
-                                </div>
-                            </li>
-                            <li className="flex flex-col border-b-2 border-borderLine">
-                                <div className="p-[3em] px-[5dvw] ">
-                                    hooo
+                        <ol className="flex justify-center w-full flex-col">
+                            <li className="flex flex-col md:flex-row border-b-2 border-borderLine h-[90dvh] md:h-[50dvh] items-center gap-2 p-2 md:p-5">
+                                <figure className=" h-[50dvh] md:h-full md:w-[30%] w-full">
+                                    <div className="h-full w-auto bg-mainTheme"></div>
+                                </figure>
+                                <figcaption className="md:p-[3em] grow-[1] px-[5dvw] text-h2 flex flex-col gap-2">
+                                    <p>Lorem ipsum</p>
+                                    <p>React Native, EJS, whatever</p>
+                                </figcaption>
+                                <div className="px-5 md:block hidden">
+                                    <p> <ChevronRight/> </p>
                                 </div>
                             </li>
                         </ol>
                     </section>
-                    <section className="border-borderLine border-r-2 border-l-2 w-full">
+                    {/* footer here just a placeholder */}
+                    <section className="border-borderLine border-r-2 border-l-2 w-full ">
                         <p>hiii</p>
                     </section>
                 </section>
