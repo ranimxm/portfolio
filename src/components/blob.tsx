@@ -28,7 +28,7 @@ export default function Blob() {
         fragmentShader,
       });
       
-      const geometry = new THREE.CircleGeometry(1.45, 800);
+      const geometry = new THREE.CircleGeometry(1.25, 800);
       const blob = new THREE.Mesh(geometry, blobMaterial);
       scene.add(blob);
       camera.position.z = 3;
