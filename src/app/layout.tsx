@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import "@/styles/globals.css";
 import Header from "@/components/header";
-import Blob from "@/components/blob";
+import Bbb from "@/components/bb";
 
 export const metadata: Metadata = {
   title: "Home | Ranim Mohammad",
@@ -21,7 +21,7 @@ export default function RootLayout({
         <main className="overflow-hidden h-full w-full flex flex-col">
           {children}
         </main>
-          <Blob />
+        <Bbb />
       </body>
     </html>
   );
