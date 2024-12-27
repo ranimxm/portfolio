@@ -20,3 +20,26 @@ export const fragmentShader = `
         gl_FragColor = vec4(color, 1.0);
     }
 `;
+
+export const waterFragmentShader = `
+    varying vec2 vUv;
+
+    void main() {
+        vec2 center = vec2(0.5, 0.5);
+        float radius = 0.5;
+        float dist = distance(vUv, center);
+
+        vec3 color;
+
+        if (dist <= radius) {
+            if (dist > radius - 0.002) {
+                vec3 background = vec3(1.0);
+                vec3 semiTransparentBlack = mix(background, vec3(0.0), 0.15); // 15% transparant zwart
+                color = semiTransparentBlack;
+            } else {
+                color = vec3(1.0); // wit
+            }
+        }
+        gl_FragColor = vec4(color, 1.0);
+    }
+`;
