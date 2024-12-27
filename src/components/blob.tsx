@@ -2,7 +2,7 @@
 
 import React, { useEffect, useRef } from "react";
 import * as THREE from "three";
-import { fragmentShader } from "@/assets/shaders/fragmentShader";
+import { waterFragmentShader } from "@/assets/shaders/fragmentShader";
 import { vertexShader } from "@/assets/shaders/vertexShader";
 
 export default function Blob() {
@@ -24,7 +24,7 @@ export default function Blob() {
           uTime: { value: 0.0 },
         },
         vertexShader,
-        fragmentShader,
+        fragmentShader: waterFragmentShader,
       });
       
       const geometry = new THREE.CircleGeometry(1.25, 800);
@@ -62,7 +62,7 @@ export default function Blob() {
   return (
     <div
       ref={containerRef}
-      className="overflow-hidden w-full h-full fixed top-[1.5rem] bottom-0 z-[-1]"
+      className="overflow-hidden w-full h-full fixed top-[1.5rem] bottom-0 z-[1]"
     />
   );
 };

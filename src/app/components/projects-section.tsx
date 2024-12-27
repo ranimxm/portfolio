@@ -1,9 +1,15 @@
 import { ChevronRight } from "@/assets/icons/chevronRight";
+import Blob from "@/components/blob";
 
 export default function ProjectsSection() {
     return (
-        <section className="w-full flex flex-col justify-center items-start bg-white border-borderLine border-t-2">
-            <div className="px-[10dvw] w-full">
+        <section className="section overflow-hidden w-full bg-white flex flex-col justify-center items-start border-borderLine border-t-2"
+            style={{ clipPath: 'inset(0 0 0 0)' }}
+        >
+            <div>
+                <Blob />
+            </div>
+            <div className="px-[10dvw] w-full z-[10]">
                 <section className="text-black h-full w-full flex flex-col">
                     <div className="h-[70dvh] border-l-2 border-r-2  w-full border-borderLine flex flex-col text-h1 md:text-xxl h-[70dvh] flex flex-col justify-center items-start
                     relative after:absolute after:content-[''] after:w-[300dvw] after:bottom-[0] after:h-[2px] after:left-[-200px] after:bg-borderLine"
