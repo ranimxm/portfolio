@@ -4,14 +4,12 @@
 
 :root {
   --background: #101010;
-  --foreground: white;
+  --text: white;
   --main-theme: #4f46e5;
   --border-line: #00000026;
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
 /* hover on items */
