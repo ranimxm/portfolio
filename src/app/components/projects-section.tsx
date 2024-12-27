@@ -6,9 +6,7 @@ export default function ProjectsSection() {
         <section className="section overflow-hidden w-full bg-white flex flex-col justify-center items-start border-borderLine border-t-2"
             style={{ clipPath: 'inset(0 0 0 0)' }}
         >
-            <div>
-                <Blob />
-            </div>
+            <Blob />
             <div className="px-[10dvw] w-full z-[10]">
                 <section className="text-black h-full w-full flex flex-col">
                     <div className="h-[70dvh] border-l-2 border-r-2  w-full border-borderLine flex flex-col text-h1 md:text-xxl h-[70dvh] flex flex-col justify-center items-start
