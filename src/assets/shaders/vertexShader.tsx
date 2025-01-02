@@ -6,8 +6,8 @@ export const vertexShader = `
         vUv = uv;
         vec3 newPosition = position;
 
-        float ripple = sin((position.x * 5.0 + position.y * 5.0) + uTime * 1.0) * 0.06;
-        newPosition.z += ripple;
+        float distortion = sin(position.x * 5.0 + uTime) * 0.1;
+        newPosition.z += distortion;
 
         gl_Position = projectionMatrix * modelViewMatrix * vec4(newPosition, 1.0);
     }
