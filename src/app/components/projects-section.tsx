@@ -33,10 +33,6 @@ export default function ProjectsSection() {
                             </li>
                         </ol>
                     </section>
-                    {/* footer here just a placeholder */}
-                    <section className="border-borderLine border-r-2 border-l-2 w-full ">
-                        <p>hiii</p>
-                    </section>
                 </section>
             </div>
         </section>
