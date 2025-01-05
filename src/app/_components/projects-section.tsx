@@ -17,9 +17,7 @@ export default function ProjectsSection() {
                     >
                         <AnimatedText text="Projects" className="p-[5vw]"/>
                     </div>
-                    <section className="border-borderLine border-r-2 border-l-2 w-full
-                    relative after:absolute after:content-[''] after:w-[300vw] after:bottom-[0] after:h-[2px] after:left-[-200px] after:bg-borderLine
-                    ">
+                    <section className="border-borderLine border-r-2 border-l-2 w-full">
                         <ol className="flex justify-center w-full flex-col">
                             {projects.map((project, index) => (
                                 <li key={project.id}>
