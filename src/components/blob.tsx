@@ -2,11 +2,13 @@
 
 import React, { useEffect, useRef } from "react";
 import * as THREE from "three";
-import { waterFragmentShader } from "@/assets/shaders/fragmentShader";
+import { fragmentShader, waterFragmentShader } from "@/assets/shaders/fragmentShader";
 import { vertexShader } from "@/assets/shaders/vertexShader";
 import Circles from "./circles";
+import { isLight } from "@/types/is-light";
 
-export default function Blob() {
+
+export default function Blob({ isLight }: isLight) {
     const containerRef = useRef<HTMLDivElement>(null);
 
     useEffect(() => {
@@ -28,7 +30,7 @@ export default function Blob() {
           mousePos: { value: mouse },
         },
         vertexShader,
-        fragmentShader: waterFragmentShader,
+        fragmentShader: isLight ? waterFragmentShader : fragmentShader,
       });
       
       const geometry = new THREE.CircleGeometry(1.25, 800);
