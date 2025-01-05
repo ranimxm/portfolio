@@ -1,0 +1,126 @@
+import * as THREE from 'three';
+import { gsap } from 'gsap';
+
+const scene = new THREE.Scene();
+const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+const renderer = new THREE.WebGLRenderer({ antialias: true });
+renderer.setSize(window.innerWidth, window.innerHeight);
+document.body.appendChild(renderer.domElement);
+
+const clock = new THREE.Clock();
+
+const blobMaterial = new THREE.ShaderMaterial({
+  uniforms: {
+    uTime: { value: 0.0 },
+  },
+vertexShader: `
+  uniform float uTime;
+  varying vec2 vUv;
+
+  void main() {
+    vUv = uv;
+    vec3 newPosition = position;
+
+    float ripple2 = sin((position.x * 1.0 + position.y * 5.0) + uTime * 1.0) * 0.1;
+
+    newPosition.z += ripple2;
+
+    gl_Position = projectionMatrix * modelViewMatrix * vec4(newPosition, 0.9);
+  }
+`,
+
+  fragmentShader: `
+    varying vec2 vUv;
+
+    void main() {
+      gl_FragColor = vec4(0.5 + 0.5 * vUv.x, 0.5 + 0.5 * vUv.y, 1.0, 1.0);
+    }
+  `,
+});
+
+const geometry = new THREE.CircleGeometry(1, 150);
+const blob = new THREE.Mesh(geometry, blobMaterial);
+scene.add(blob);
+
+camera.position.z = 3;
+
+function updateBlobScale() {
+  const scale = Math.min(window.innerWidth, window.innerHeight) / 500;
+  blob.scale.set(scale, scale, scale);
+}
+updateBlobScale();
+
+const container = document.createElement('div');
+container.id = 'canvas-container';
+container.style.position = 'relative';
+container.style.width = '100vw';
+container.style.height = '100vh';
+document.body.appendChild(container);
+
+const canvas = renderer.domElement;
+canvas.id = 'three-canvas';
+canvas.style.position = 'absolute';
+canvas.style.top = '0';
+canvas.style.left = '0';
+canvas.style.width = '100%';
+canvas.style.height = '100%';
+canvas.style.zIndex = '1';
+container.appendChild(canvas);
+
+function createCircle(className, sizePercentage, zIndex) {
+  const circle = document.createElement('div');
+  circle.className = className;
+  circle.style.position = 'absolute';
+  circle.style.border = `1.6px dashed white`;
+  circle.style.borderRadius = '50%';
+  
+  const size = `${sizePercentage}vmin`;
+  circle.style.width = size;
+  circle.style.height = size;
+  circle.style.top = '50%';
+  circle.style.left = '50%';
+  circle.style.transform = 'translate(-50%, -50%)';
+  circle.style.zIndex = zIndex;
+
+  document.getElementById('canvas-container').appendChild(circle);
+  return circle;
+}
+
+const outerCircle = createCircle('circle-border outer', 75, 2);
+const innerCircle = createCircle('circle-border inner', 80, 1);
+
+gsap.to(outerCircle, {
+  rotation: -360,
+  duration: 20,
+  repeat: -1,
+  ease: 'linear',
+  transformOrigin: '50% 50%',
+});
+
+gsap.to(innerCircle, {
+  rotation: -360,
+  duration: 16,
+  repeat: -1,
+  ease: 'linear',
+  transformOrigin: '50% 50%',
+});
+
+window.addEventListener('resize', () => {
+  const width = window.innerWidth;
+  const height = window.innerHeight;
+
+  renderer.setSize(width, height);
+  camera.aspect = width / height;
+  camera.updateProjectionMatrix();
+
+  updateBlobScale();
+});
+
+function animate() {
+  requestAnimationFrame(animate);
+
+  blobMaterial.uniforms.uTime.value = clock.getElapsedTime();
+
+  renderer.render(scene, camera);
+}
+animate();
