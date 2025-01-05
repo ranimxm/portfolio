@@ -4,12 +4,12 @@ import projects from "@/data/projects.json";
 import { notFound } from "next/navigation";
 
 type ProjectPageProps = {
-  params: { id: string };
+  params: { slug: string };
 }
 
 export default async function ProjectPage({ params }: ProjectPageProps) {
-  const {id} = await(params);
-  const project = projects.find((p) => p.id === Number(id));
+  const {slug} = await(params);
+  const project = projects.find((p) => p.slug === slug);
 
   if (!project) {
     return notFound(); 

@@ -23,7 +23,7 @@ export default function ProjectsSection() {
                         <ol className="flex justify-center w-full flex-col">
                             {projects.map((project, index) => (
                                 <li key={project.id}>
-                                    <Link href={`/projects/${project.id}`} key={project.id}  className={`group hover:cursor-pointer flex flex-col md:flex-row 
+                                    <Link href={`/projects/${project.slug}`} key={project.id}  className={`group hover:cursor-pointer flex flex-col md:flex-row 
                                         ${index === projects.length -1 ? "border-b-0" : "border-b-2"} border-borderLine h-[90vh] md:h-[50vh] items-center gap-2 p-2 md:p-5`}>
                                             <figure className=" h-[50vh] md:h-full md:w-[30%] w-full">
                                             <div className="h-full w-auto bg-mainTheme"></div>

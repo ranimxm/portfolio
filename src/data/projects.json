@@ -2,26 +2,31 @@
     {
         "id": 1,
         "title": "React Native Music Application",
+        "slug": "react-native-music-application",
         "framework": "React Native"
     },
     {
         "id": 2,
         "title": "Recreated Twitter partly using MongoDB",
+        "slug": "recreated-twitter-partly-using-mongodb",
         "framework": "MongoDB, NodeJS"
     },
     {
         "id": 3,
         "title": "AMW Veranda",
+        "slug": "amw-veranda",
         "framework": "PHP"
     },
     {
         "id": 4,
         "title": "Note App with EJS",
+        "slug": "note-app-with-ejs",
         "framework": "EJS, NodeJS"
     },
     {
         "id": 5,
         "title": "First version of my portfolio",
+        "slug": "first-version-of-my-portfolio",
         "framework": "VueJS "
     }
   ]
