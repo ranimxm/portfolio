@@ -2,12 +2,9 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import { isLight } from "@/types/is-light";
 
-type HeaderProps = {
-  isLight?: boolean;
-}
-
-export default function Header({ isLight }: HeaderProps) { 
+export default function Header({ isLight }: isLight) { 
   const [navActive, setNavActive] = useState(false);
   const [menuActive, setMenuActive] = useState(false);
 
