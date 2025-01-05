@@ -10,7 +10,7 @@ export default function ProjectsSection() {
             <Blob />
             <div className="px-[10vw] w-full z-[10]">
                 <section className="text-black h-full w-full flex flex-col">
-                    <div className="h-[70vh] border-l-2 border-r-2  w-full border-borderLine flex flex-col text-h1 md:text-xxl h-[70vh] flex flex-col justify-center items-start
+                    <div className="border-l-2 border-r-2  w-full border-borderLine flex flex-col text-h1 md:text-xxl h-[65vh] flex flex-col justify-center items-start
                     relative after:absolute after:content-[''] after:w-[300vw] after:bottom-[0] after:h-[2px] after:left-[-200px] after:bg-borderLine"
                     >
                         <AnimatedText text="Projects" className="p-[5vw]"/>
@@ -19,16 +19,18 @@ export default function ProjectsSection() {
                     relative after:absolute after:content-[''] after:w-[300vw] after:bottom-[0] after:h-[2px] after:left-[-200px] after:bg-borderLine
                     ">
                         <ol className="flex justify-center w-full flex-col">
-                            <li className="flex flex-col md:flex-row border-b-2 border-borderLine h-[90vh] md:h-[50vh] items-center gap-2 p-2 md:p-5">
+                            <li className="group hover:cursor-pointer flex flex-col md:flex-row border-b-2 border-borderLine h-[90vh] md:h-[50vh] items-center gap-2 p-2 md:p-5">
                                 <figure className=" h-[50vh] md:h-full md:w-[30%] w-full">
                                     <div className="h-full w-auto bg-mainTheme"></div>
                                 </figure>
-                                <figcaption className="md:p-[3em] grow-[1] px-[5vw] text-h2 flex flex-col gap-2">
-                                    <AnimatedText text="Lorem ipsum" />
-                                    <AnimatedText text="React native, ejs whatever"/>
-                                </figcaption>
-                                <div className="px-5 md:block hidden">
-                                    <p> <ChevronRight/> </p>
+                                <div className="flex flex-col md:flex-row w-[70%] items-center justify-between items-center">
+                                    <figcaption className="md:p-[3em] grow-[1] px-[5vw] text-h2 flex flex-col gap-8">
+                                        <AnimatedText className="h1" text="Lorem ipsum" />
+                                        <AnimatedText text="React native, ejs whatever"/>
+                                    </figcaption>
+                                    <div className="px-5 md:block hidden">
+                                        <p> <ChevronRight className="text-black group-hover:text-mainTheme group-hover:-translate-x-4 ease-out duration-300"/> </p>
+                                    </div>
                                 </div>
                             </li>
                         </ol>
