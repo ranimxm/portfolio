@@ -7,9 +7,9 @@ type ProjectPageProps = {
   params: { id: string };
 }
 
-export default function ProjectPage({ params }: ProjectPageProps) {
-  const projectId = Number(params.id);
-  const project = projects.find((p) => p.id === projectId);
+export default async function ProjectPage({ params }: ProjectPageProps) {
+  const {id} = await(params);
+  const project = projects.find((p) => p.id === Number(id));
 
   if (!project) {
     return notFound(); 
