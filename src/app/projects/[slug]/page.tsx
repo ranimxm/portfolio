@@ -17,12 +17,12 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
 
   return (
     <>
-      <Header />
-      <main className="bg-white text-black h-[90vh] w-full">
+      <Header isLight />
+      <main className="bg-white text-black h-[90vh] w-full" style={{ clipPath: 'inset(0 0 0 0)' }}>
         <h1 className="text-xxl ">{project.title}</h1>
         <p className="text-xl">{project.framework}</p>
+        <Blob />
       </main>
-      <Blob />
     </>
   );
 }

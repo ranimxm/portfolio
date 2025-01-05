@@ -3,7 +3,11 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 
-export default function Header() { 
+type HeaderProps = {
+  isLight?: boolean;
+}
+
+export default function Header({ isLight }: HeaderProps) { 
   const [navActive, setNavActive] = useState(false);
   const [menuActive, setMenuActive] = useState(false);
 
@@ -11,7 +15,12 @@ export default function Header() {
     setNavActive(!navActive);
     setMenuActive(!menuActive);
   };
+  const headerClasses = isLight
+    ? "flex items-center justify-between p-4 px-8 text-h3 border-borderLine border-solid border-b-2 bg-white text-black z-[99] relative"
+    : "flex items-center justify-between p-4 px-8 text-h3 text-white z-[99] relative";
 
+  const spanClasses = isLight ? "bg-black" : "bg-white";
+  const backgroundClasses = isLight ? "bg-white" : "bg-background";
   useEffect(() => {
     const navigation = document.querySelector(".nav") as HTMLElement;
     const menu = document.querySelector(".menu");
@@ -22,7 +31,7 @@ export default function Header() {
   }, []);
 
   return (
-    <header className="flex items-center justify-between p-4 px-8 text-h3 text-white z-[99] relative">
+    <header className={headerClasses}>
       <div className="flex flex-col items-start justify-center">
         <p>Ranim</p>
         <p>Mohammad</p>
@@ -30,8 +39,8 @@ export default function Header() {
       <nav>
         <ul
           className={` nav nav-list flex flex-row gap-4 ${
-            navActive ? "active" : ""
-          }`}
+            navActive ? "active" : "" 
+          } ${backgroundClasses}`}
         >
           <li className="p-2">
             <Link href="/" className="hover-link" onClick={toggleMenu}> Home </Link>
@@ -43,9 +52,9 @@ export default function Header() {
           } hidden cursor-pointer relative flex-col items-center justify-between w-[23px] h-[18px] m-[20px]`}
           onClick={toggleMenu}
         >
-          <span className="w-full h-[2px] rounded-full bg-white transition origin-left duration-300 ease-linear"></span>
-          <span className="w-full h-[2px] rounded-full bg-white transition origin-left duration-300 ease-linear"></span>
-          <span className="w-full h-[2px] rounded-full bg-white transition origin-left duration-300 ease-linear"></span>
+          <span className={`w-full h-[2px] rounded-full ${spanClasses} transition origin-left duration-300 ease-linear`}></span>
+          <span className={`w-full h-[2px] rounded-full ${spanClasses} transition origin-left duration-300 ease-linear`}></span>
+          <span className={`w-full h-[2px] rounded-full ${spanClasses} transition origin-left duration-300 ease-linear`}></span>
         </div>
       </nav>
     </header>
