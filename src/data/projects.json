@@ -1,0 +1,28 @@
+[
+    {
+        "id": 1,
+        "title": "React Native Music Application",
+        "framework": "React Native"
+    },
+    {
+        "id": 2,
+        "title": "Recreated Twitter partly using MongoDB",
+        "framework": "MongoDB, NodeJS"
+    },
+    {
+        "id": 3,
+        "title": "AMW Veranda",
+        "framework": "PHP"
+    },
+    {
+        "id": 4,
+        "title": "Note App with EJS",
+        "framework": "EJS, NodeJS"
+    },
+    {
+        "id": 5,
+        "title": "First version of my portfolio",
+        "framework": "VueJS "
+    }
+  ]
+  
