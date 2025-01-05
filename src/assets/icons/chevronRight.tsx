@@ -1,6 +1,4 @@
-interface SvgProps {
-    className?: string;
-}
+import { SvgProps } from "@/types/svg-props";
 
 export const ChevronRight = ({ className }: SvgProps) => (
     <svg
