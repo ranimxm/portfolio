@@ -25,7 +25,7 @@ export default function ProjectsSection() {
                                 </figure>
                                 <div className="flex flex-col md:flex-row w-[70%] items-center justify-between items-center">
                                     <figcaption className="md:p-[3em] grow-[1] px-[5vw] text-h2 flex flex-col gap-8">
-                                        <AnimatedText className="h1" text="Lorem ipsum" />
+                                        <AnimatedText text="Lorem ipsum" />
                                         <AnimatedText text="React native, ejs whatever"/>
                                     </figcaption>
                                     <div className="px-5 md:block hidden">
