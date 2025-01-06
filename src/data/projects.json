@@ -3,31 +3,36 @@
         "id": 1,
         "title": "React Native Music Application",
         "slug": "react-native-music-application",
-        "framework": "React Native"
+        "framework": "React Native",
+        "description": "This is a music application that I created using React Native. It has a simple UI and it can play music from the device."
     },
     {
         "id": 2,
         "title": "Recreated Twitter partly using MongoDB",
         "slug": "recreated-twitter-partly-using-mongodb",
-        "framework": "MongoDB, NodeJS"
+        "framework": "MongoDB, NodeJS",
+        "description": "This is a Twitter clone that I created using MongoDB and NodeJS. It has a simple UI and it can post tweets."
     },
     {
         "id": 3,
         "title": "AMW Veranda",
         "slug": "amw-veranda",
-        "framework": "PHP"
+        "framework": "PHP",
+        "description": "This is a website that I created for a client. It is a simple website that has a contact form."
     },
     {
         "id": 4,
         "title": "Note App with EJS",
         "slug": "note-app-with-ejs",
-        "framework": "EJS, NodeJS"
+        "framework": "EJS, NodeJS",
+        "description": "This is a note application that I created using EJS and NodeJS. It has a simple UI and it can add, edit, and delete notes. It also has a text on image recognition feature."
     },
     {
         "id": 5,
         "title": "First version of my portfolio",
         "slug": "first-version-of-my-portfolio",
-        "framework": "VueJS "
+        "framework": "VueJS ",
+        "description": "This is the first version of my portfolio that I created using VueJS. It has a simple UI"
     }
   ]
   
