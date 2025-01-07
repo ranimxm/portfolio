@@ -15,8 +15,8 @@ export default function Home() {
             <p>Mohammad</p>
           </div>
           <div className="md:text-h1 text-h3 flex gap-2 justify-end items-center">
-            <ArrowDown />
             <p>scroll</p>
+            <ArrowDown />
           </div>
         </div>
       </section>
