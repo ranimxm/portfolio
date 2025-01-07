@@ -13,29 +13,30 @@ export const AnimatedText = ({text, className}: AnimatedText) => {
     const textRef = useRef<HTMLDivElement>(null);
     
     useEffect (() => {
-        gsap.registerPlugin(ScrollTrigger);
-        const scroll = gsap.timeline({
-            scrollTrigger: {
-              trigger: textRef.current,
-              scrub: 1,
-              start: "top bottom",
-              end: "top center",
-            },
-          });
-          if (textRef.current){
-            scroll.to({}, { duration: 0.05 });
-            scroll.to(textRef.current.querySelector("p"), {
-              backgroundPositionX: 0,
-              ease: "power2.out",
-            });
-          }
-    }, [])
+      gsap.registerPlugin(ScrollTrigger);
+      if (!textRef.current) return;
 
-    return (
-        <div className="text" ref={textRef}>
-            <p className={`${className}`}>
-                {text}
-            </p>
-        </div>
-    )
+      gsap.fromTo(textRef.current.querySelector("p"),
+      { color: "#4f46e5" },
+      {
+        color: "rgb(37, 37, 37)",  
+        duration: 1,
+        stagger: 0.2,
+        scrub: 1,
+        scrollTrigger: {
+          trigger: textRef.current,  
+          start: "top bottom",
+          end: "top center",
+          toggleActions: "restart none none reverse",
+        },
+        ease: "power2.out",
+      }
+    );        
+  }, [])
+
+  return (
+    <div className={`${className} text`} ref={textRef}>
+      <p>{text}</p>
+    </div>
+  )
 }
