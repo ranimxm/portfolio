@@ -42,6 +42,9 @@ export default function Header({ isLight }: isLight) {
           <li className="p-2">
             <Link href="/" className="hover-link" onClick={toggleMenu}> Home </Link>
           </li>
+          <li className="p-2">
+            <Link href="/about" className="hover-link" onClick={toggleMenu}> About </Link>
+          </li>
         </ul>
         <div
           className={`menu ${
