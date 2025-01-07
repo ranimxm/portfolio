@@ -15,7 +15,8 @@
         "framework": "MongoDB, NodeJS",
         "description": "This is a Twitter clone that I created using MongoDB and NodeJS. It has a simple UI and it can post tweets.",
         "columns": 1,
-        "images": ["/images/projects/twitter/twitter-1.png", "/images/projects/twitter/twitter-2.png", "/images/projects/twitter/twitter-3.png"]
+        "images": ["/images/projects/twitter/twitter-1.png", "/images/projects/twitter/twitter-2.png", "/images/projects/twitter/twitter-3.png"],
+        "link": "https://twittah.onrender.com"
     },
     {
         "id": 3,
@@ -24,7 +25,8 @@
         "framework": "PHP",
         "description": "This is a website that I created for a client. It is a simple website that has a contact form.",
         "columns": 1,
-        "images": ["/images/projects/amw/amw-1.png", "/images/projects/amw/amw-2.png"]
+        "images": ["/images/projects/amw/amw-1.png", "/images/projects/amw/amw-2.png"],
+        "link": "http://amwveranda.nl"
     },
     {
         "id": 4,
@@ -33,7 +35,8 @@
         "framework": "EJS, NodeJS",
         "description": "This is a note application that I created using EJS and NodeJS. It has a simple UI and it can add, edit, and delete notes. It also has a text on image recognition feature.",
         "columns": 1,
-        "images": ["/images/projects/ejs/ejs-1.png", "/images/projects/ejs/ejs-2.png"]
+        "images": ["/images/projects/ejs/ejs-1.png", "/images/projects/ejs/ejs-2.png"],
+        "link": "https://duocase.onrender.com"
     },
     {
         "id": 5,
@@ -42,7 +45,8 @@
         "framework": "VueJS ",
         "description": "This is the first version of my portfolio that I created using VueJS. It has a simple UI",
         "columns": 1,
-        "images": ["/images/projects/portfolio/portfolio-1.png", "/images/projects/portfolio/portfolio-2.png", "/images/projects/portfolio/portfolio-3.png"]
+        "images": ["/images/projects/portfolio/portfolio-1.png", "/images/projects/portfolio/portfolio-2.png", "/images/projects/portfolio/portfolio-3.png"],
+        "link": "www.ranimmohammad.vercel.app"
     }
   ]
   
