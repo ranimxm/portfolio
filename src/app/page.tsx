@@ -1,4 +1,4 @@
-import { ArrowDown } from "@/assets/icons/arrowDown";
+import { ArrowDown } from "@/assets/icons/arrow-down";
 import ProjectsSection from "./_components/projects-section";
 import Blob from "@/components/blob";
 import Header from "@/components/header";

@@ -1,4 +1,4 @@
-import { ChevronRight } from "@/assets/icons/chevronRight";
+import { ChevronRight } from "@/assets/icons/chevron-right";
 import { AnimatedText } from "@/components/animated-text";
 import Blob from "@/components/blob";
 import projects from "@/data/projects.json";
