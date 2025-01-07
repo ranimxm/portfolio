@@ -22,12 +22,12 @@ export default function ProjectsSection() {
                             {projects.map((project, index) => (
                                 <li key={project.id}>
                                     <Link href={`/projects/${project.slug}`} key={project.id}  className={`group hover:cursor-pointer flex flex-col md:flex-row 
-                                        ${index === projects.length -1 ? "border-b-0" : "border-b-2"} border-borderLine h-[90vh] md:h-[50vh] items-center gap-2 p-2 md:p-5`}>
-                                            <figure className=" h-[50vh] md:h-full md:w-[30%] w-full">
-                                            <div className="h-full w-auto bg-mainTheme"></div>
+                                        ${index === projects.length -1 ? "border-b-0" : "border-b-2"} border-borderLine h-[80vh] md:h-[50vh] items-center gap-2 p-2 md:p-5`}>
+                                        <figure className=" h-[50vh] md:h-full md:w-[30%] w-full px-[2vw]">
+                                            <img src={project.image} alt={project.title} className="h-full w-auto object-cover"/>
                                         </figure>
-                                        <div className="flex flex-col md:flex-row w-[70%] items-center justify-between items-center">
-                                            <figcaption className="md:p-[3em] grow-[1] px-[5vw] text-h2 flex flex-col gap-8">
+                                        <div className="flex flex-col md:flex-row w-full md:w-[70%] justify-between px-[2vw] md:items-center">
+                                            <figcaption className="md:p-[3em] grow-[1] text-h2 flex flex-col gap-8">
                                                 <AnimatedText text={project.title} />
                                                 <AnimatedText text={project.framework} />
                                             </figcaption>
