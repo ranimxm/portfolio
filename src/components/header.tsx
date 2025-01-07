@@ -13,7 +13,7 @@ export default function Header({ isLight }: isLight) {
     setMenuActive(!menuActive);
   };
   const headerClasses = isLight
-    ? "flex items-center justify-between p-4 px-8 text-h3 border-borderLine border-solid border-b-2 bg-white text-black z-[99] relative"
+    ? "flex items-center justify-between p-4 px-8 text-h3 border-borderLine border-solid border-b-[1px] bg-white text-black z-[99] relative"
     : "flex items-center justify-between p-4 px-8 text-h3 text-white z-[99] relative";
 
   const spanClasses = isLight ? "bg-black" : "bg-white";

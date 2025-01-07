@@ -22,17 +22,17 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
       <main className="bg-white text-black w-full" style={{ clipPath: 'inset(0 0 0 0)' }}>
         <div className="px-[10vw] w-full z-[10]">
           <section className="text-black w-full flex flex-col">
-            <div className=" h-full p-[5vw] border-l-2 border-r-2  w-full border-borderLine flex flex-col text-h1 md:text-xxl flex flex-col justify-center items-start
-            relative after:absolute after:content-[''] after:w-[300vw] after:bottom-[0] after:h-[2px] after:left-[-200px] after:bg-borderLine"
+            <div className=" h-full p-[5vw] border-l-[1px] border-r-[1px]  w-full border-borderLine flex flex-col text-h1 md:text-xxl flex flex-col justify-center items-start
+            relative after:absolute after:content-[''] after:w-[300vw] after:bottom-[0] after:h-[1px] after:left-[-200px] after:bg-borderLine"
             >
               <h1> {project.title} </h1>
               <p className="text-h2 md:text-xl">{project.framework}</p>
             </div>
-            <section className="border-borderLine border-r-2 border-l-2 w-full flex flex-col gap-8  ">
-              <div className="flex justify-center w-full flex-row gap-8 border-b-2 border-borderLine">
+            <section className="border-borderLine border-r-[1px] border-l-[1px] w-full flex flex-col gap-8  ">
+              <div className="flex justify-center w-full flex-row gap-8 border-b-[1px] border-borderLine">
                 <AnimatedText className="text-h4 md:text-h3 p-[5vw]"  text={project.description}/>
                 {project.link &&(
-                  <AnimatedText className="text-h4 md:text-h3 w-[100%] p-[5vw] border-l-2 border-borderLine" text={project.link} isLink={true}/>
+                  <AnimatedText className="text-h4 md:text-h3 w-[100%] p-[5vw] border-l-[1px] border-borderLine" text={project.link} isLink={true}/>
                 )}
               </div>
               <div className={`grid gap-4 py-[10vh] px-[5vw] ${project.columns === 1 ? "grid-cols-1" : "grid-cols-1 md:grid-cols-2"}`}>
