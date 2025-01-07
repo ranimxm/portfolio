@@ -42,7 +42,7 @@ export const AnimatedText = ({text, className, isLink}: AnimatedText) => {
           {text}
         </a>
       ) : (
-        <p>{text}</p>
+        <p className={className}>{text}</p>
       )}
     </div>
   )
