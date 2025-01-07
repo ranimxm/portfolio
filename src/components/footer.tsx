@@ -10,7 +10,7 @@ export const Footer = () => {
     };
 
     return (
-        <footer className="relative bg-white py-[5vh] px-[5vw] text-black border-borderLine border-t-[1px] h-full">
+        <footer className="relative bg-white py-[5vh] px-[5vw] text-black border-borderLine flex flex-col gap-8 border-t-[1px] h-full">
             <div className="relative flex justify-end items-end">
                 <button
                     onClick={scrollToTop}
