@@ -29,6 +29,9 @@ export const Footer = () => {
                             <Link href="/" className="hover-link">Home</Link> 
                         </li>
                         <li>
+                            <Link href={{ pathname: "/", query: { section: "projects" }}} className="hover-link" > Projects </Link>
+                        </li>
+                        <li>
                             <Link href="/about" className="hover-link">About</Link>
                         </li>
                     </ul>

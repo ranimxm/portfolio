@@ -6,7 +6,7 @@ import Link from "next/link";
 
 export default function ProjectsSection() {
     return (
-        <section className="overflow-hidden w-full bg-white flex flex-col justify-center items-start border-borderLine border-t-[1px]"
+        <section className="projects-section overflow-hidden w-full bg-white flex flex-col justify-center items-start border-borderLine border-t-[1px]"
             style={{ clipPath: 'inset(0 0 0 0)' }}
         >
             <Blob isLight/>
