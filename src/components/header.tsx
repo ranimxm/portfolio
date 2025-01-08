@@ -30,8 +30,10 @@ export default function Header({ isLight }: isLight) {
   return (
     <header className={headerClasses}>
       <div className="flex flex-col items-start justify-center">
-        <p>Ranim</p>
-        <p>Mohammad</p>
+        <Link href="/" className="hover-link"> 
+          <p>Ranim</p>
+          <p>Mohammad</p>
+        </Link>
       </div>
       <nav>
         <ul
