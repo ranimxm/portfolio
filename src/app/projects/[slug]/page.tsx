@@ -8,6 +8,22 @@ type ProjectPageProps = {
   params: { slug: string };
 }
 
+export async function generateMetadata({ params }: ProjectPageProps) {
+  const project = projects.find((p) => p.slug === params.slug);
+
+  if (!project) {
+    return {
+      title: "Project Not Found",
+      description: "The project you are looking for does not exist.",
+    };
+  }
+
+  return {
+    title: `${project.title} | Ranim Mohammad`,
+    description: "Details about the project.",
+  };
+}
+
 export default async function ProjectPage({ params }: ProjectPageProps) {
   const {slug} = await(params);
   const project = projects.find((p) => p.slug === slug);

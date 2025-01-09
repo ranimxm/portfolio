@@ -1,6 +1,12 @@
 import { AnimatedText } from "@/components/animated-text";
 import Blob from "@/components/blob";
 import Header from "@/components/header";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "About | Ranim Mohammad",
+  description: "About page for you and me",
+};
 
 export default async function AboutPage() {
 
