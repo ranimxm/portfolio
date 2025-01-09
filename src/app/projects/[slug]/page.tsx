@@ -9,7 +9,8 @@ type ProjectPageProps = {
 }
 
 export async function generateMetadata({ params }: ProjectPageProps) {
-  const project = projects.find((p) => p.slug === params.slug);
+  const {slug} = await(params);
+  const project = projects.find((p) => p.slug === slug);
 
   if (!project) {
     return {
