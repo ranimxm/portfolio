@@ -30,7 +30,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
             </div>
             <section className="border-borderLine border-r-[1px] border-l-[1px] w-full flex flex-col gap-8  ">
               <div className="flex justify-center w-full flex-col md:flex-row gap-8 border-b-[1px] border-borderLine">
-                <AnimatedText className="text-h4 md:text-h3 p-[5vw]" text={project.description}/>
+                <AnimatedText className="text-h4 md:text-h3 p-[5vw]" text={project.summary}/>
                 {project.link &&(
                   <AnimatedText className="text-h4 md:text-h3 md:w-[70%] w-full p-[5vw] border-t-[1px] md:border-t-0 md:border-l-[1px] border-borderLine" text={project.link} isLink={true}/>
                 )}
@@ -45,6 +45,9 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
                       />
                     </div>
                   ))}
+              </div>
+              <div>
+                <AnimatedText className="text-h4 md:text-h3 pb-[5vh] px-[5vw]" text={project.description}/>
               </div>
             </section>
           </section>

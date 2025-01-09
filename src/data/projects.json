@@ -5,10 +5,11 @@
         "slug": "react-native-music-application",
         "framework": "React Native",
         "hoverColor": "#9985c5",
-        "description": "This is a music application that I created using React Native. It has a simple UI and it can play music from the device.",
+        "summary": "This is a music application that I created using React Native. It has a simple UI and it can play music from the device.",
         "columns": 2,
         "image": "/images/projects/music/music-app-1.png",
-        "images": ["/images/projects/music/music-app-1.png", "/images/projects/music/music-app-2.png"]
+        "images": ["/images/projects/music/music-app-1.png", "/images/projects/music/music-app-2.png"],
+        "description": "This is a music application that I created using React Native. It has a simple UI and it can play music from the device. It has a play, pause, and stop button. It also has a slider to control the volume of the music and a slider to control the progress of the music. It also has a list of songs that the user can choose from. The user can also skip to the next song or go back to the previous song. The user can also shuffle the songs. The user can also repeat the song. The user can also see the album art of the song that is currently playing. The user can also see the title of the song that is currently playing. The user can also see the artist of the song that is currently playing. The user can also see the duration of the song that is currently playing. The user can also see the progress of the song that is currently playing. The user can also see the volume of the song that is currently playing. The user can also see the list of songs that the user can choose from. The user can also see the play, pause, and stop button. The user can also see the skip to the next song button. The user can also see the go back to the previous song button. The user can also see the shuffle button. The user can also see the repeat button."
     },
     {
         "id": 2,
@@ -16,11 +17,12 @@
         "slug": "recreated-twitter-partly-using-mongodb",
         "framework": "MongoDB, NodeJS",
         "hoverColor": "#1b8ca6",
-        "description": "This is a Twitter clone that I created using MongoDB and NodeJS. It has a simple UI and it can post tweets.",
+        "summary": "This is a Twitter clone that I created using MongoDB and NodeJS. It has a simple UI and it can post tweets.",
         "columns": 1,
         "image": "/images/projects/twitter/twitter-1.png",
         "images": ["/images/projects/twitter/twitter-1.png", "/images/projects/twitter/twitter-2.png", "/images/projects/twitter/twitter-3.png"],
-        "link": "https://twittah.onrender.com"
+        "link": "https://twittah.onrender.com",
+        "description": "This is a Twitter clone that I created using MongoDB and NodeJS. It has a simple UI and it can post tweets. It has a text area where the user can type the tweet. It has a post button that the user can click to post the tweet. It has a list of tweets that the user can see. The user can also see the name of the user who posted the tweet. The user can also see the username of the user who posted the tweet. The user can also see the date and time when the tweet was posted. The user can also see the content of the tweet. The user can also see the number of likes that the tweet has. The user can also see the number of retweets that the tweet has. The user can also see the number of comments that the tweet has. The user can also see the like button that the user can click to like the tweet. The user can also see the retweet button that the user can click to retweet the tweet. The user can also see the comment button that the user can click to comment on the tweet. The user can also see the list of comments that the user can see. The user can also see the name of the user who commented on the tweet. The user can also see the username of the user who commented on the tweet. The user can also see the date and time when the comment was posted. The user can also see the content of the comment."
     },
     {
         "id": 3,
@@ -28,11 +30,12 @@
         "slug": "amw-veranda",
         "framework": "PHP",
         "hoverColor": "#84fee2",
-        "description": "This is a website that I created for a client. It is a simple website that has a contact form.",
+        "summary": "This is a website that I created for a client. It is a simple website that has a contact form.",
         "columns": 1,
         "image": "/images/projects/amw/amw-1.png",
         "images": ["/images/projects/amw/amw-1.png", "/images/projects/amw/amw-2.png"],
-        "link": "http://amwveranda.nl"
+        "link": "http://amwveranda.nl",
+        "description": "This is a website that I created for a client. It is a simple website that has a contact form. It has a home page where the user can see the logo of the company. The user can also see the name of the company. The user can also see the slogan of the company. The user can also see the menu of the website. The user can also see the contact form. The user can also see the name field of the contact form. The user can also see the email field of the contact form. The user can also see the message field of the contact form. The user can also see the send button of the contact form. The user can also see the footer of the website. The user can also see the address of the company. The user can also see the phone number of the company. The user can also see the email address of the company. The user can also see the social media links of the company."
     },
     {
         "id": 4,
@@ -40,11 +43,12 @@
         "slug": "note-app-with-ejs",
         "framework": "EJS, NodeJS",
         "hoverColor": "#fcfe8f",
-        "description": "This is a note application that I created using EJS and NodeJS. It has a simple UI and it can add, edit, and delete notes. It also has a text on image recognition feature.",
+        "summary": "This is a note application that I created using EJS and NodeJS. It has a simple UI and it can add, edit, and delete notes. It also has a text on image recognition feature.",
         "columns": 1,
         "image": "/images/projects/ejs/ejs-2.png",
         "images": ["/images/projects/ejs/ejs-1.png", "/images/projects/ejs/ejs-2.png"],
-        "link": "https://duocase.onrender.com"
+        "link": "https://duocase.onrender.com",
+        "description": "This is a note application that I created using EJS and NodeJS. It has a simple UI and it can add, edit, and delete notes. It also has a text on image recognition feature. It has a text area where the user can type the note. It has a save button that the user can click to save the note. It has a list of notes that the user can see. The user can also see the title of the note. The user can also see the content of the note. The user can also see the date and time when the note was created. The user can also see the edit button that the user can click to edit the note. The user can also see the delete button that the user can click to delete the note. The user can also see the image recognition button that the user can click to recognize the text on the image. The user can also see the image upload button that the user can click to upload the image. The user can also see the image that the user uploaded. The user can also see the text that was recognized from the image."
     },
     {
         "id": 5,
@@ -52,11 +56,12 @@
         "slug": "first-version-of-my-portfolio",
         "framework": "VueJS ",
         "hoverColor": "#0166ff",
-        "description": "This is the first version of my portfolio that I created using VueJS. It has a simple UI",
+        "summary": "This is the first version of my portfolio that I created using VueJS. It has a simple UI",
         "columns": 1,
         "image": "/images/projects/portfolio/portfolio-1.png",
         "images": ["/images/projects/portfolio/portfolio-1.png", "/images/projects/portfolio/portfolio-2.png", "/images/projects/portfolio/portfolio-3.png"],
-        "link": "www.ranimmohammad.vercel.app"
+        "link": "www.ranimmohammad.vercel.app",
+        "description": "this is an older version of my personal portfolio. it shows the work i did etc etc"
     }
   ]
   
