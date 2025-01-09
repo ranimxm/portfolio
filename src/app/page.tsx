@@ -6,6 +6,7 @@ import Blob from "@/components/blob";
 import Header from "@/components/header";
 import { useEffect } from "react";
 import { useSearchParams } from "next/navigation";
+import { LoadinText } from "@/components/loadin-text";
 
 export default function Home() {
   const searchParams = useSearchParams();
@@ -26,8 +27,8 @@ export default function Home() {
       <section className="h-[90vh] w-full flex flex-col justify-center items-start px-[10vw]">
         <div className="text-white w-full flex flex-col text-h1 md:text-xxl">
           <div>
-            <p>Ranim</p>
-            <p>Mohammad</p>
+            <LoadinText text="Ranim" />
+            <LoadinText text="Mohammad" />
           </div>
           <div className="md:text-h1 text-h3 flex gap-2 justify-end items-center">
             <p>scroll</p>

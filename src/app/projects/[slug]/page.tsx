@@ -1,6 +1,7 @@
 import { AnimatedText } from "@/components/animated-text";
 import Blob from "@/components/blob";
 import Header from "@/components/header";
+import { LoadinText } from "@/components/loadin-text";
 import projects from "@/data/projects.json";
 import { notFound } from "next/navigation";
 
@@ -42,8 +43,8 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
             <div className=" h-full p-[5vw] border-l-[1px] border-r-[1px]  w-full border-borderLine flex flex-col text-h1 md:text-xxl flex flex-col justify-center items-start
             relative after:absolute after:content-[''] after:w-[300vw] after:bottom-[0] after:h-[1px] after:left-[-200px] after:bg-borderLine"
             >
-              <h1> {project.title} </h1>
-              <p className="text-h2 md:text-xl">{project.framework}</p>
+              <LoadinText text={project.title} className="text-h1 md:text-l"/>
+              <LoadinText text={project.framework} className="text-h2 md:text-xl"/>
             </div>
             <section className="border-borderLine border-r-[1px] border-l-[1px] w-full flex flex-col gap-8  ">
               <div className="flex justify-center w-full flex-col md:flex-row gap-8 border-b-[1px] border-borderLine">
