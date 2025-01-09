@@ -36,14 +36,19 @@ export const AnimatedText = ({text, className, isLink}: AnimatedText) => {
   }, [])
 
   return (
-    <div className={`${className} text`} ref={textRef}>
-      {isLink ? (
+    <>
+    {isLink ? (
+      <div className={`${className} text`} ref={textRef}>
         <a href={text} target="_blank" rel="noopener noreferrer" className="hover-link font-semibold">
           {text}
         </a>
-      ) : (
+      </div>
+    ) : (
+      <div className={`text`} ref={textRef}>
         <p className={className}>{text}</p>
-      )}
-    </div>
+      </div>
+    )
+  }
+    </>
   )
 }

@@ -29,10 +29,10 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
               <p className="text-h2 md:text-xl">{project.framework}</p>
             </div>
             <section className="border-borderLine border-r-[1px] border-l-[1px] w-full flex flex-col gap-8  ">
-              <div className="flex justify-center w-full flex-row gap-8 border-b-[1px] border-borderLine">
-                <AnimatedText className="text-h4 md:text-h3 p-[5vw]"  text={project.description}/>
+              <div className="flex justify-center w-full flex-col md:flex-row gap-8 border-b-[1px] border-borderLine">
+                <AnimatedText className="text-h4 md:text-h3 p-[5vw]" text={project.description}/>
                 {project.link &&(
-                  <AnimatedText className="text-h4 md:text-h3 w-[100%] p-[5vw] border-l-[1px] border-borderLine" text={project.link} isLink={true}/>
+                  <AnimatedText className="text-h4 md:text-h3 md:w-[70%] w-full p-[5vw] border-t-[1px] md:border-t-0 md:border-l-[1px] border-borderLine" text={project.link} isLink={true}/>
                 )}
               </div>
               <div className={`grid gap-4 py-[10vh] px-[5vw] ${project.columns === 1 ? "grid-cols-1" : "grid-cols-1 md:grid-cols-2"}`}>
