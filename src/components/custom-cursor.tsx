@@ -23,7 +23,11 @@ export const CustomCursor = () => {
             const isInsideLink = elementUnderCursor?.closest("a");
             if (isInsideLink) {
                 setIsVisible(true);
-                gsap.to(cursorElement, { scale: 1.5, duration: 0.3, ease: "power2.out" }); 
+                gsap.to(cursorElement, { 
+                    scale: 1.5, 
+                    duration: 0.9, 
+                    ease: "cubic-bezier(0.22,1,0.36,1)" 
+                }); 
             }
         };
 
@@ -32,7 +36,11 @@ export const CustomCursor = () => {
             const isLeavingLink = !(elementUnderCursor?.closest("a"));
             if (isLeavingLink) {
                 setIsVisible(false);
-                gsap.to(cursorElement, { scale: 1, duration: 0.3, ease: "power2.out" });
+                gsap.to(cursorElement, { 
+                    scale: 1, 
+                    duration: 0.9,
+                    ease: "cubic-bezier(0.22,1,0.36,1)" 
+                });
             }
         };
 
@@ -49,7 +57,6 @@ export const CustomCursor = () => {
 
     return (
         <div className={`custom-cursor fixed pointer-events-none z-[99] w-5 h-5 bg-white rounded-full mix-blend-difference
-            duration-[0.5s] ease-[cubic-bezier(0.22,1,0.36,1)]
             ${isVisible ? "block" : "hidden"}`}/>
     );
 };
