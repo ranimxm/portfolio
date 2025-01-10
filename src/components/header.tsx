@@ -1,22 +1,21 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useCallback } from "react";
 import Link from "next/link";
 import { isLight } from "@/types/is-light";
 
 export default function Header({ isLight }: isLight) { 
   const [navActive, setNavActive] = useState(false);
-  const [menuActive, setMenuActive] = useState(false);
 
-  const toggleMenu = () => {
-    setNavActive(!navActive);
-    setMenuActive(!menuActive);
-  };
+  const toggleMenu = useCallback(() => {
+    setNavActive((prev) => !prev);
+  }, []);
+  
   const headerClasses = isLight
     ? "flex items-center justify-between p-4 px-8 text-h3 border-borderLine border-solid border-b-[1px] bg-white text-black z-[90] relative"
     : "flex items-center justify-between p-4 px-8 text-h3 text-white z-[90] relative";
 
-  const spanClasses = isLight ? "bg-black" : "bg-white";
+  const spanClasses = isLight ? "bg-background" : "bg-white";
   const backgroundClasses = isLight ? "bg-white" : "bg-background";
   useEffect(() => {
     const navigation = document.querySelector(".nav") as HTMLElement;
@@ -28,7 +27,7 @@ export default function Header({ isLight }: isLight) {
   }, []);
 
   return (
-    <header className={headerClasses}>
+    <header className={`${headerClasses} ${navActive ? backgroundClasses : ""}`}>
       <div className="flex flex-col items-start justify-center">
         <Link href="/" className="hover-link"> 
           <p>Ranim</p>
@@ -53,7 +52,7 @@ export default function Header({ isLight }: isLight) {
         </ul>
         <div
           className={`menu ${
-            menuActive ? "active" : ""
+            navActive ? "active" : ""
           } hidden cursor-pointer relative flex-col items-center justify-between w-[23px] h-[18px] m-[20px]`}
           onClick={toggleMenu}
         >
