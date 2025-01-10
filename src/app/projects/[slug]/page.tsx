@@ -7,11 +7,10 @@ import Image from "next/image";
 import { notFound } from "next/navigation";
 
 type ProjectPageProps = {
-  params: { slug: string };
+  params: Promise<{ slug: string; }>;
 }
-
 export async function generateMetadata({ params }: ProjectPageProps) {
-  const {slug} = await(params);
+  const {slug} = await params;
   const project = projects.find((p) => p.slug === slug);
 
   if (!project) {
@@ -28,7 +27,7 @@ export async function generateMetadata({ params }: ProjectPageProps) {
 }
 
 export default async function ProjectPage({ params }: ProjectPageProps) {
-  const {slug} = await(params);
+  const {slug} = await params;
   const project = projects.find((p) => p.slug === slug);
 
   if (!project) {

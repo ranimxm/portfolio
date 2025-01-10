@@ -4,11 +4,11 @@ import { ArrowDown } from "@/assets/icons/arrow-down";
 import ProjectsSection from "./_components/projects-section";
 import Blob from "@/components/blob";
 import Header from "@/components/header";
-import { useEffect } from "react";
+import { Suspense, useEffect } from "react";
 import { useSearchParams } from "next/navigation";
 import { LoadinText } from "@/components/loadin-text";
 
-export default function Home() {
+const ScrollToProjects = () => {
   const searchParams = useSearchParams();
 
   useEffect(() => {
@@ -19,7 +19,11 @@ export default function Home() {
       window.history.replaceState({}, document.title, "/");
     }
   }, [searchParams]);
-  
+
+  return null;
+}
+
+export default function Home() {
   return (
     <>
       <Header />
@@ -36,6 +40,9 @@ export default function Home() {
           </div>
         </div>
       </section>
+      <Suspense fallback={<div>Initializing scroll...</div>}>
+        <ScrollToProjects />
+      </Suspense>
       <ProjectsSection />
     </>
   );
