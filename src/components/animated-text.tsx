@@ -3,6 +3,8 @@
 import gsap from "gsap";
 import { useEffect, useRef } from "react"
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import SplitType from "split-type";
+
 
 type AnimatedText = {
     text: string,
@@ -16,19 +18,23 @@ export const AnimatedText = ({text, className, isLink}: AnimatedText) => {
     useEffect (() => {
       gsap.registerPlugin(ScrollTrigger);
       if (!textRef.current) return;
+      
+      const targetElement = textRef.current.querySelector("p, a");
+      if (!targetElement) return;
+      const splitText = new SplitType(targetElement as HTMLElement, { types: "chars" });
 
-      gsap.fromTo(textRef.current.querySelector("p, a"),
+      gsap.fromTo(splitText.chars,
       { color: "#4f46e5" },
       {
         color: "rgb(37, 37, 37)",  
         duration: 1,
         stagger: 0.2,
-        scrub: 1,
         scrollTrigger: {
           trigger: textRef.current,  
-          start: "top bottom",
-          end: "top center",
-          toggleActions: "restart none none reverse",
+          start: "top 50%",
+          end: "top 30%",
+          scrub: 1,
+          toggleActions: "reverse none none reverse",
         },
         ease: "power2.out",
       }
