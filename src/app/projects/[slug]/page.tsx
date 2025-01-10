@@ -3,6 +3,7 @@ import Blob from "@/components/blob";
 import Header from "@/components/header";
 import { LoadinText } from "@/components/loadin-text";
 import projects from "@/data/projects.json";
+import Image from "next/image";
 import { notFound } from "next/navigation";
 
 type ProjectPageProps = {
@@ -56,7 +57,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
               <div className={`grid gap-4 py-[10vh] px-[5vw] ${project.columns === 1 ? "grid-cols-1" : "grid-cols-1 md:grid-cols-2"}`}>
                 {project.images?.map((image, index) => (
                     <div key={index} className=" w-full h-full md:h-[80vh]">
-                      <img
+                      <Image width={500} height={0}
                         src={image}
                         alt={`Picture ${index + 1} from ${project.title}`}
                         className="h-full w-full"
