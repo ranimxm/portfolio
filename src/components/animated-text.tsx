@@ -31,8 +31,8 @@ export const AnimatedText = ({text, className, isLink}: AnimatedText) => {
         stagger: 0.2,
         scrollTrigger: {
           trigger: textRef.current,  
-          start: "top 50%",
-          end: "top 30%",
+          start: "top 100%",
+          end: "top 60%",
           scrub: 1,
           toggleActions: "reverse none none reverse",
         },
