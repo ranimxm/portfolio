@@ -33,7 +33,7 @@ export default function Blob({ isLight }: isLight) {
         fragmentShader: isLight ? waterFragmentShader : fragmentShader,
       });
       
-      const geometry = new THREE.CircleGeometry(1.25, 800);
+      const geometry = new THREE.CircleGeometry(1.25, 200);
       const blob = new THREE.Mesh(geometry, blobMaterial);
       scene.add(blob);
       camera.position.z = 3;
@@ -59,16 +59,18 @@ export default function Blob({ isLight }: isLight) {
       window.addEventListener("resize", handleResize);
 
       const animate = () => {
-        requestAnimationFrame(animate);
-        // Voeg easing toe aan de muispositie
-        target.x += (mouse.x - target.x) * 0.1;
-        target.y += (mouse.y - target.y) * 0.1;
-
-        blobMaterial.uniforms.uTime.value = clock.getElapsedTime();
-        blobMaterial.uniforms.mousePos.value = target;
-
-        renderer.render(scene, camera);
-        updateBlobScale();
+        setTimeout(() => { 
+          requestAnimationFrame(animate);
+          // Voeg easing toe aan de muispositie
+          target.x += (mouse.x - target.x) * 0.1;
+          target.y += (mouse.y - target.y) * 0.1;
+  
+          blobMaterial.uniforms.uTime.value = clock.getElapsedTime();
+          blobMaterial.uniforms.mousePos.value = target;
+  
+          renderer.render(scene, camera);
+          updateBlobScale();
+        }, 1000 / 60);
       };
       animate();
 

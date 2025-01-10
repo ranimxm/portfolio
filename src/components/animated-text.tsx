@@ -38,7 +38,10 @@ export const AnimatedText = ({text, className, isLink}: AnimatedText) => {
         },
         ease: "power2.out",
       }
-    );        
+    );  
+    return () => {
+      ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
+    }      
   }, [])
 
   return (

@@ -2,20 +2,27 @@
 
 import { useEffect, useState } from "react";
 import { gsap } from "gsap";
+import { time } from "console";
 
 export const CustomCursor = () => {
     const [isVisible, setIsVisible] = useState(false);
 
     useEffect(() => {
         const cursorElement = document.querySelector(".custom-cursor");
+        let timeout: NodeJS.Timeout | null;
 
         const moveCursor = (e: MouseEvent) => {
-            gsap.to(cursorElement, {
-                x: e.clientX,
-                y: e.clientY,
-                duration: 0.1,
-                ease: "power2.out",
-            });
+            if (!timeout) {
+                gsap.to(cursorElement, {
+                    x: e.clientX,
+                    y: e.clientY,
+                    duration: 0.1,
+                    ease: "power2.out",
+                });
+                timeout = setTimeout(() => {
+                    timeout = null;
+                  }, 16); // ongv 60 FPS
+            };
         };
 
         const handleMouseEnter = (e: MouseEvent) => {
