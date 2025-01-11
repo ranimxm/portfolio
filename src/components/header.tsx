@@ -44,9 +44,6 @@ export default function Header({ isLight }: isLight) {
             <Link href="/" className="hover-link" onClick={toggleMenu}> Home </Link>
           </li>
           <li className="p-2">
-            <Link href={{ pathname: "/", query: { section: "projects" }}} className="hover-link" onClick={toggleMenu} > Projects </Link>
-          </li>
-          <li className="p-2">
             <Link href="/about" className="hover-link" onClick={toggleMenu}> About </Link>
           </li>
         </ul>

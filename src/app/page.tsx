@@ -1,27 +1,8 @@
-"use client";
-
 import { ArrowDown } from "@/assets/icons/arrow-down";
 import ProjectsSection from "./_components/projects-section";
 import Blob from "@/components/blob";
 import Header from "@/components/header";
-import { Suspense, useEffect } from "react";
-import { useSearchParams } from "next/navigation";
 import { LoadinText } from "@/components/loadin-text";
-
-const ScrollToProjects = () => {
-  const searchParams = useSearchParams();
-
-  useEffect(() => {
-    const section = searchParams.get("section");
-    if (section === "projects") {
-      const projectsSection = document.querySelector(".projects-section");
-      projectsSection?.scrollIntoView({ behavior: "smooth" });
-      window.history.replaceState({}, document.title, "/");
-    }
-  }, [searchParams]);
-
-  return null;
-}
 
 export default function Home() {
   return (
@@ -40,9 +21,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <Suspense fallback={<div>Initializing scroll...</div>}>
-        <ScrollToProjects />
-      </Suspense>
       <ProjectsSection />
     </>
   );
