@@ -25,8 +25,9 @@ export default {
       "8": "2.5rem",
     },
     fontSize: {
-      "xxl": "6.75rem",
-      "l": "6rem",
+      "xxl": "6rem",
+      "l": "5rem",
+      "hm": "4rem",
       "xl": "3.375rem",
       "h1": "2.25rem",
       "h2": "1.5rem",

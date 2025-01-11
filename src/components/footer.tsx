@@ -21,7 +21,7 @@ export const Footer = () => {
             <div className="flex flex-col md:flex-row justify-between items-start space-y-4 md:space-y-0">
                 <div>
                     <h2 className="text-xl">Ranim Mohammad</h2>
-                    <p className="text-fontColor"> Digital projects with purpose</p>
+                    <p className="text-fontColor"> Digital projects with solutions</p>
                 </div>
                 <nav className="flex gap-10">
                     <ul className="space-y-2 text-h2">

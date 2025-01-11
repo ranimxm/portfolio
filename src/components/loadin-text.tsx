@@ -5,7 +5,7 @@ import gsap from "gsap";
 import SplitType from "split-type";
 
 type AnimatedTextProps = {
-  text: string;
+    text: string | React.ReactNode;
   className?: string;
 };
 

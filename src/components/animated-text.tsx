@@ -21,9 +21,9 @@ export const AnimatedText = ({text, className, isLink}: AnimatedText) => {
       
       const targetElement = textRef.current.querySelector("p, a");
       if (!targetElement) return;
-      const splitText = new SplitType(targetElement as HTMLElement, { types: "chars" });
+      const splitText = new SplitType(targetElement as HTMLElement, { types: "words" });
 
-      gsap.fromTo(splitText.chars,
+      gsap.fromTo(splitText.words,
       { color: "#4f46e5" },
       {
         color: "rgb(37, 37, 37)",  
@@ -31,29 +31,37 @@ export const AnimatedText = ({text, className, isLink}: AnimatedText) => {
         stagger: 0.2,
         scrollTrigger: {
           trigger: textRef.current,  
-          start: "top 100%",
-          end: "top 60%",
+          start: "top 80%",
+          end: "top 70%",
           scrub: 1,
           toggleActions: "reverse none none reverse",
         },
         ease: "power2.out",
-      }
-    );  
+        onComplete: () => {
+          if (textRef.current?.closest(".group:hover")) {
+            splitText.words?.forEach((word) => (word.style.color = ""));
+          }
+        },
+        }
+      );  
+
     return () => {
       ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
     }      
-  }, [])
+    }, [])
+  
+  
 
   return (
     <>
     {isLink ? (
       <div className={`${className} text`} ref={textRef}>
-        <a href={text} target="_blank" rel="noopener noreferrer" className="hover-link font-semibold">
+        <a href={text} target="_blank" rel="noopener noreferrer" className="hover-link">
           {text}
         </a>
       </div>
     ) : (
-      <div className={`text`} ref={textRef}>
+      <div className={`text group-hover:text-white z-[10]`} ref={textRef}>
         <p className={className}>{text}</p>
       </div>
     )

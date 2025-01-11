@@ -1,67 +1,67 @@
 [
     {
         "id": 1,
-        "title": "React Native Music Application",
-        "slug": "react-native-music-application",
+        "title": ["Music Application"],
+        "slug": "music-application",
         "framework": "React Native",
         "hoverColor": "#9985c5",
-        "summary": "This is a music application that I created using React Native. It has a simple UI and it can play music from the device.",
+        "summary": "A music player app built with React Native. It lets you play songs, pause, and manage playlists.",
         "columns": 2,
         "image": "/images/projects/music/music-app-1.png",
         "images": ["/images/projects/music/music-app-1.png", "/images/projects/music/music-app-2.png"],
-        "description": "This is a music application that I created using React Native. It has a simple UI and it can play music from the device. It has a play, pause, and stop button. It also has a slider to control the volume of the music and a slider to control the progress of the music. It also has a list of songs that the user can choose from. The user can also skip to the next song or go back to the previous song. The user can also shuffle the songs. The user can also repeat the song. The user can also see the album art of the song that is currently playing. The user can also see the title of the song that is currently playing. The user can also see the artist of the song that is currently playing. The user can also see the duration of the song that is currently playing. The user can also see the progress of the song that is currently playing. The user can also see the volume of the song that is currently playing. The user can also see the list of songs that the user can choose from. The user can also see the play, pause, and stop button. The user can also see the skip to the next song button. The user can also see the go back to the previous song button. The user can also see the shuffle button. The user can also see the repeat button."
+        "description": "This app is made with React Native to learn mobile app development. It includes basic controls like play, pause, and stop. Users can adjust the volume, shuffle songs, and repeat tracks. The main challenge was setting up all the tools correctly and fixing issues during development. Creating the APK file for Android took time because I had to learn new steps. This project taught me how to solve problems and manage app features better."
     },
     {
         "id": 2,
-        "title": "Recreated Twitter partly using MongoDB",
+        "title": ["Recreated Twitter partly using MongoDB"],
         "slug": "recreated-twitter-partly-using-mongodb",
         "framework": "MongoDB, NodeJS",
         "hoverColor": "#1b8ca6",
-        "summary": "This is a Twitter clone that I created using MongoDB and NodeJS. It has a simple UI and it can post tweets.",
+        "summary": "A simple Twitter-like app built with MongoDB and NodeJS. Users can post and view tweets.",
         "columns": 1,
         "image": "/images/projects/twitter/twitter-1.png",
         "images": ["/images/projects/twitter/twitter-1.png", "/images/projects/twitter/twitter-2.png", "/images/projects/twitter/twitter-3.png"],
         "link": "https://twittah.onrender.com",
-        "description": "This is a Twitter clone that I created using MongoDB and NodeJS. It has a simple UI and it can post tweets. It has a text area where the user can type the tweet. It has a post button that the user can click to post the tweet. It has a list of tweets that the user can see. The user can also see the name of the user who posted the tweet. The user can also see the username of the user who posted the tweet. The user can also see the date and time when the tweet was posted. The user can also see the content of the tweet. The user can also see the number of likes that the tweet has. The user can also see the number of retweets that the tweet has. The user can also see the number of comments that the tweet has. The user can also see the like button that the user can click to like the tweet. The user can also see the retweet button that the user can click to retweet the tweet. The user can also see the comment button that the user can click to comment on the tweet. The user can also see the list of comments that the user can see. The user can also see the name of the user who commented on the tweet. The user can also see the username of the user who commented on the tweet. The user can also see the date and time when the comment was posted. The user can also see the content of the comment."
+        "description": "This project copies basic Twitter features using MongoDB and NodeJS. At first, I used JSON for data storage, but I switched to MongoDB after feedback. The app shows tweets and stores them in the database. Challenges included learning how to use a database and making the design simple and easy to use. This project helped me understand how to connect a database to a website and improve my backend development skills."
     },
     {
         "id": 3,
-        "title": "AMW Veranda",
+        "title": ["AMW Veranda"],
         "slug": "amw-veranda",
-        "framework": "PHP",
+        "framework": "PHP, Bootstrap",
         "hoverColor": "#84fee2",
-        "summary": "This is a website that I created for a client. It is a simple website that has a contact form.",
+        "summary": "A client website made for a veranda company. It includes a contact form and language options.",
         "columns": 1,
         "image": "/images/projects/amw/amw-1.png",
         "images": ["/images/projects/amw/amw-1.png", "/images/projects/amw/amw-2.png"],
         "link": "http://amwveranda.nl",
-        "description": "This is a website that I created for a client. It is a simple website that has a contact form. It has a home page where the user can see the logo of the company. The user can also see the name of the company. The user can also see the slogan of the company. The user can also see the menu of the website. The user can also see the contact form. The user can also see the name field of the contact form. The user can also see the email field of the contact form. The user can also see the message field of the contact form. The user can also see the send button of the contact form. The user can also see the footer of the website. The user can also see the address of the company. The user can also see the phone number of the company. The user can also see the email address of the company. The user can also see the social media links of the company."
+        "description": "I created this website for a company that sells verandas. The site includes a contact form where users can send messages and switch between languages. Hosting the site on GoDaddy was challenging because I had to figure out the deployment process. This project helped me learn more about building websites for real clients and solving hosting problems."
     },
     {
         "id": 4,
-        "title": "Note App with EJS",
+        "title": ["Note App with EJS"],
         "slug": "note-app-with-ejs",
         "framework": "EJS, NodeJS",
         "hoverColor": "#fcfe8f",
-        "summary": "This is a note application that I created using EJS and NodeJS. It has a simple UI and it can add, edit, and delete notes. It also has a text on image recognition feature.",
+        "summary": "A note app built with EJS and NodeJS. It includes text recognition and note management features.",
         "columns": 1,
         "image": "/images/projects/ejs/ejs-2.png",
         "images": ["/images/projects/ejs/ejs-1.png", "/images/projects/ejs/ejs-2.png"],
         "link": "https://duocase.onrender.com",
-        "description": "This is a note application that I created using EJS and NodeJS. It has a simple UI and it can add, edit, and delete notes. It also has a text on image recognition feature. It has a text area where the user can type the note. It has a save button that the user can click to save the note. It has a list of notes that the user can see. The user can also see the title of the note. The user can also see the content of the note. The user can also see the date and time when the note was created. The user can also see the edit button that the user can click to edit the note. The user can also see the delete button that the user can click to delete the note. The user can also see the image recognition button that the user can click to recognize the text on the image. The user can also see the image upload button that the user can click to upload the image. The user can also see the image that the user uploaded. The user can also see the text that was recognized from the image."
+        "description": "This app allows users to take notes, upload images, and recognize text in pictures using Tesseract.js. The app was built with EJS and NodeJS. One challenge was managing how files are stored and displayed on the website. This project taught me how to use APIs and handle data between the frontend and backend."
     },
     {
         "id": 5,
-        "title": "First version of my portfolio",
+        "title": ["First version of my portfolio"],
         "slug": "first-version-of-my-portfolio",
-        "framework": "VueJS ",
+        "framework": "VueJS",
         "hoverColor": "#0166ff",
-        "summary": "This is the first version of my portfolio that I created using VueJS. It has a simple UI",
+        "summary": "The first version of my portfolio website. It showcases my projects and skills.",
         "columns": 1,
         "image": "/images/projects/portfolio/portfolio-1.png",
         "images": ["/images/projects/portfolio/portfolio-1.png", "/images/projects/portfolio/portfolio-2.png", "/images/projects/portfolio/portfolio-3.png"],
-        "link": "www.ranimmohammad.vercel.app",
-        "description": "this is an older version of my personal portfolio. it shows the work i did etc etc"
+        "link": "firstportfolio-r.vercel.app",
+        "description": "This was the first version of my portfolio. I used VueJS to build a responsive website that showed my work and skills. A challenge was making sure the website worked well on different browsers and devices. This project helped me understand how to create a portfolio for potential clients or employers."
     }
   ]
   

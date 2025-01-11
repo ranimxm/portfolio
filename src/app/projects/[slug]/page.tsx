@@ -1,3 +1,4 @@
+import { ArrowLink } from "@/assets/icons/arrow-link";
 import { AnimatedText } from "@/components/animated-text";
 import Blob from "@/components/blob";
 import Header from "@/components/header";
@@ -43,14 +44,17 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
             <div className=" h-full p-[5vw] border-l-[1px] border-r-[1px]  w-full border-borderLine flex flex-col text-h1 md:text-xxl flex flex-col justify-center items-start
             relative after:absolute after:content-[''] after:w-[300vw] after:bottom-[0] after:h-[1px] after:left-[-200px] after:bg-borderLine"
             >
-              <LoadinText text={project.title} className="text-h1 md:text-l"/>
-              <LoadinText text={project.framework} className="text-h2 md:text-xl"/>
+              <LoadinText text={<>{project.title[0]}<br />{project.title[1]}</>} className="text-h1 md:text-l"/>
+              <LoadinText text={project.framework} className="text-fontColor text-h2 md:text-xl"/>
             </div>
             <section className="border-borderLine border-r-[1px] border-l-[1px] w-full flex flex-col gap-8  ">
               <div className="flex justify-center w-full flex-col md:flex-row gap-8 border-b-[1px] border-borderLine">
                 <AnimatedText className="text-h4 md:text-h3 p-[5vw]" text={project.summary}/>
-                {project.link &&(
-                  <AnimatedText className="text-h4 md:text-h3 md:w-[70%] w-full p-[5vw] border-t-[1px] md:border-t-0 md:border-l-[1px] border-borderLine" text={project.link} isLink={true}/>
+                {project.link && (
+                  <div className="flex flex-row justify-center items-center gap-2 md:w-[70%] w-full p-[5vw] border-t-[1px] md:border-t-0 md:border-l-[1px] border-borderLine">
+                    <AnimatedText className="text-h4 md:text-h3 " text={project.link} isLink={true} />
+                    <ArrowLink />
+                  </div>
                 )}
               </div>
               <div className={`grid gap-4 py-[10vh] px-[5vw] ${project.columns === 1 ? "grid-cols-1" : "grid-cols-1 md:grid-cols-2"}`}>

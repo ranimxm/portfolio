@@ -32,12 +32,12 @@ export default function ProjectsSection() {
                                         ${index === projects.length -1 ? "border-b-0" : "border-b-[1px]"} border-borderLine h-[80vh] md:h-[50vh] items-center gap-2 p-2 md:p-5
                                          `}>
                                         <figure className=" h-[50vh] z-[30] md:h-full md:w-[30%] w-full px-[2vw] overflow-hidden">
-                                            <Image src={project.image} width={500} height={0} alt={project.title} className="h-full w-auto object-cover transform transition-transform duration-300 group-hover:scale-110"/>
+                                            <Image src={project.image} width={500} height={0} alt={project.title[0]} className="h-full w-auto object-cover transform transition-transform duration-300 group-hover:scale-110"/>
                                         </figure>
                                         <figcaption className="flex flex-col md:flex-row w-full md:w-[70%] justify-between px-[2vw] md:items-center">
                                             <div className="md:p-[3em] grow-[1] text-h2 flex flex-col gap-8 group-hover:-translate-x-4 ease-out duration-300">
                                                 <p>{project.title}</p>
-                                                <p>{project.framework}</p>
+                                                <p className="text-fontColor group-hover:text-white">{project.framework}</p>
                                             </div>
                                             <div className="px-5 md:block hidden">
                                                 <ChevronRight className="text-black group-hover:text-white group-hover:-translate-x-4 ease-out duration-300"/>
