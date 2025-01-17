@@ -56,10 +56,6 @@ http://localhost:3000
 - **Framework**: [Next.js](https://nextjs.org/) - React framework for production.
 - **Build Tool**: [Turbopack](https://turbo.build/pack) - Blazing fast build system.
 
-## Contribution
-
-Feel free to fork this repository and submit pull requests for any enhancements or suggestions. Your contributions are welcome!
-
 ---
 
 Thank you for checking out my portfolio!
