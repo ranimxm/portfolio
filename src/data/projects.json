@@ -60,7 +60,7 @@
         "columns": 1,
         "image": "/images/projects/portfolio/portfolio-1.png",
         "images": ["/images/projects/portfolio/portfolio-1.png", "/images/projects/portfolio/portfolio-2.png", "/images/projects/portfolio/portfolio-3.png"],
-        "link": "firstportfolio-r.vercel.app",
+        "link": "https://firstportfolio-r.vercel.app",
         "description": "This was the first version of my portfolio. I used VueJS to build a responsive website that showed my work and skills. A challenge was making sure the website worked well on different browsers and devices. This project helped me understand how to create a portfolio for potential clients or employers."
     }
   ]
