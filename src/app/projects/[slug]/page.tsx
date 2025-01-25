@@ -42,7 +42,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
         <div className="px-[10vw] w-full z-[10]">
           <section className="w-full flex flex-col">
             <div className=" h-full p-[5vw] border-l-[1px] border-r-[1px]  w-full border-borderLine flex flex-col text-h1 md:text-xxl flex flex-col justify-center items-start
-            relative after:absolute after:content-[''] after:w-[300vw] after:bottom-[0] after:h-[1px] after:left-[-200px] after:bg-borderLine"
+            relative after:absolute after:content-[''] after:w-[300vw] after:bottom-[0] after:h-[1px] after:left-[-200px] after:bg-borderLine work-item"
             >
               <LoadinText text={<>{project.title[0]}<br />{project.title[1]}</>} className="text-h1 md:text-l"/>
               <LoadinText text={project.framework} className="text-fontColor text-h2 md:text-xl"/>

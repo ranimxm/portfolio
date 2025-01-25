@@ -28,7 +28,7 @@ export default function ProjectsSection() {
                                 style={{
                                     '--bg-color': project.hoverColor
                                 } as React.CSSProperties}>
-                                    <Link href={`/projects/${project.slug}`} key={project.id}  className={`flex flex-col md:flex-row 
+                                    <Link href={`/projects/${project.slug}`} key={project.id}  className={`flex flex-col md:flex-row project-item
                                         ${index === projects.length -1 ? "border-b-0" : "border-b-[1px]"} border-borderLine h-[80vh] md:h-[50vh] items-center gap-2 p-2 md:p-5
                                          `}>
                                         <figure className=" h-[50vh] z-[30] md:h-full md:w-[30%] w-full px-[2vw] overflow-hidden">
