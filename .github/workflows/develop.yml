@@ -30,7 +30,7 @@ jobs:
       - name: Deploy preview + assign beta domain
         id: deploy
         run: |
-          DEPLOY_URL=$(vercel deploy --prebuilt --token=${{ secrets.VERCEL_TOKEN }} --env=preview)
+          DEPLOY_URL=$(vercel deploy --prebuilt --token=${{ secrets.VERCEL_TOKEN }} --target=preview)
           echo "DEPLOY_URL=$DEPLOY_URL" >> $GITHUB_ENV
           vercel alias --token ${{ secrets.VERCEL_TOKEN }} set $DEPLOY_URL UAT-ranimmohammad.vercel.app
           echo "::set-output name=url::$DEPLOY_URL"
