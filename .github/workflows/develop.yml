@@ -34,5 +34,5 @@ jobs:
         run: |
           DEPLOY_URL=$(vercel deploy --prebuilt --token=${{ secrets.VERCEL_TOKEN }} --env=preview)
           echo "DEPLOY_URL=$DEPLOY_URL" >> $GITHUB_ENV
-          vercel alias $DEPLOY_URL UAT-ranimmohammad.vercel.app --token=${{ secrets.VERCEL_TOKEN }}
+          vercel alias --token ${{ secrets.VERCEL_TOKEN }} set $DEPLOY_URL UAT-ranimmohammad.vercel.app
           echo "::set-output name=url::$DEPLOY_URL"
