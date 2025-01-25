@@ -60,7 +60,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
               <div className={`grid gap-4 py-[10vh] px-[5vw] ${project.columns === 1 ? "grid-cols-1" : "grid-cols-1 md:grid-cols-2"}`}>
                 {project.images?.map((image, index) => (
                     <div key={index} className=" w-full h-full md:h-[80vh]">
-                      <Image width={500} height={0}
+                      <Image width={1500} height={0}
                         src={image}
                         alt={`Picture ${index + 1} from ${project.title}`}
                         className="h-full w-full"
