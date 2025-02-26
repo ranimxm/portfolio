@@ -50,7 +50,7 @@ export const Footer = () => {
                     </ul>
                 </div>
             </div>
-            <div className="text-center mt-8 text-sm text-fontColor">© 2025 Ranim Mohammad. All Rights Reserved.</div>
+            <div className="text-center mt-8 text-sm text-fontColor">© 2025 Ranim Mohammad. All rights reserved.</div>
         </footer>
     );
   };
