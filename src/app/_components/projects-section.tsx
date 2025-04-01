@@ -13,7 +13,7 @@ export default function ProjectsSection() {
             <Blob isLight/>
             <div className="px-[10vw] w-full z-[10]">
                 <section className="text-black h-full w-full flex flex-col">
-                    <div className="border-l-[1px] border-r-[1px]  w-full border-borderLine flex flex-col text-h1 md:text-xxl h-[65vh] flex flex-col justify-center items-start
+                    <div className="border-l-[1px] border-r-[1px]  w-full border-borderLine flex flex-col text-h1 md:text-xxl md:h-[65vh] h-[40vh] flex flex-col justify-center items-start
                     relative after:absolute after:content-[''] after:w-[300vw] after:bottom-[0] after:h-[1px] after:left-[-200px] after:bg-borderLine"
                     >
                         <AnimatedText text="Projects" className="p-[5vw]"/>
@@ -35,13 +35,18 @@ export default function ProjectsSection() {
                                             <Image src={project.image} width={500} height={0} alt={project.title[0]} className="h-full w-auto object-cover transform transition-transform duration-300 group-hover:scale-110"/>
                                         </figure>
                                         <figcaption className="flex flex-col md:flex-row w-full md:w-[70%] justify-between px-[2vw] md:items-center">
-                                            <div className="md:p-[3em] grow-[1] text-h2 flex flex-col gap-8 group-hover:-translate-x-4 ease-out duration-300">
+                                            <div className="md:p-[3em] grow-[1] text-h2 flex flex-col md:gap-8 gap-4 group-hover:-translate-x-4 ease-out duration-300">
                                                 <p>{project.title}</p>
                                                 <p className="text-fontColor group-hover:text-white">{project.framework}</p>
                                             </div>
                                             <div className="px-5 md:block hidden">
                                                 <ChevronRight className="text-black group-hover:text-white group-hover:-translate-x-4 ease-out duration-300"/>
                                             </div>
+                                            <div className="pt-5 md:hidden flex flex-row gap-2 group-hover:-translate-x-4 ease-out duration-300">
+                                                <p>View more</p>
+                                                <ChevronRight className="text-black group-hover:text-white group-hover:-translate-x-4 ease-out duration-300" />
+                                            </div>
+
                                         </figcaption>
                                     </Link>
                                 </li>

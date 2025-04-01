@@ -10,12 +10,12 @@ export default function Home() {
       <Header />
       <Blob />
       <section className="h-[90vh] w-full flex flex-col justify-center items-start px-[5vw] pb-2">
-        <div className="text-white w-full flex flex-col text-h1 md:text-l">
+        <div className="text-white w-full flex flex-col text-h2 md:text-l">
           <div className="flex flex-col gap-2">
             <div className="flex flex-col">
-              <LoadinText text="I turn ideas into" />
-              <LoadinText text="reliable" />
-              <LoadinText text="digital solutions" />
+              <LoadinText text="Turning pixels" />
+              <LoadinText text="into playful" />
+              <LoadinText text="experiences"/> 
             </div>
             <LoadinText className="italic text-h2 md:text-xl" text="Ranim Mohammad" />
           </div>

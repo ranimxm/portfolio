@@ -38,7 +38,7 @@ export const LoadinText = ({ text, className }: AnimatedTextProps) => {
     }, []);
 
     return (
-        <div className={`overflow-hidden ${className}`}>
+        <div className={`overflow-hidden ${className || ""}`}>
             <p ref={textRef}>
                 {text}
             </p>
