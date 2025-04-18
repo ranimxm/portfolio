@@ -5,7 +5,7 @@ import {CustomCursor} from "@/components/custom-cursor";
 
 export const metadata: Metadata = {
   title: "Home | Ranim Mohammad",
-  description: "Home page for you and me",
+  description: "Ranim Mohammad portfolio",
 };
 
 export default function RootLayout({

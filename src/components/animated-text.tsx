@@ -31,8 +31,8 @@ export const AnimatedText = ({text, className, isLink}: AnimatedText) => {
         stagger: 0.2,
         scrollTrigger: {
           trigger: textRef.current,  
-          start: "top 80%",
-          end: "top 70%",
+          start: "top 85%",
+          end: "top 85%",
           scrub: 1,
           toggleActions: "reverse none none reverse",
         },
@@ -57,7 +57,7 @@ export const AnimatedText = ({text, className, isLink}: AnimatedText) => {
     {isLink ? (
       <div className={`${className} text`} ref={textRef}>
         <a href={text} target="_blank" rel="noopener noreferrer" className="hover-link">
-          {text}
+          View project
         </a>
       </div>
     ) : (
