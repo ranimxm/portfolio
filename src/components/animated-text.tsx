@@ -61,8 +61,8 @@ export const AnimatedText = ({text, className, isLink}: AnimatedText) => {
         </a>
       </div>
     ) : (
-      <div className={`text group-hover:text-white z-[10]`} ref={textRef}>
-        <p className={className}>{text}</p>
+      <div className={`text group-hover:text-white z-[10] ${className}`} ref={textRef}>
+        <p >{text}</p>
       </div>
     )
   }

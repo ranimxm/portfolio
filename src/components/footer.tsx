@@ -17,14 +17,11 @@ export const Footer = () => {
                     className="flex text-center justify-center items-center translate-y-[-10vh] bg-white border-borderLine border-[1px] rounded-full p-4" >
                     <ArrowUp className="hover:text-mainTheme hover:-translate-y-2 ease-out duration-300" />
                 </button>
-                              {/* <LoadinText text="Turning pixels" />
-                              <LoadinText text="into playful" />
-                              <LoadinText text="experiences"/>  */}
             </div>
             <div className="flex flex-col md:flex-row justify-between items-start space-y-4 md:space-y-0">
                 <div>
                     <h2 className="md:text-xl text-h1">Ranim Mohammad</h2>
-                    <p className="text-fontColor">Turning pixels into playful experiences</p>
+                    <p className="text-fontColor">Building logic, designing empathy</p>
                 </div>
                 <nav className="flex gap-10">
                     <ul className="space-y-2 md:text-h2 text-h3">
