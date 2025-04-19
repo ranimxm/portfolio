@@ -10,5 +10,5 @@ test("about: go to about", async ({ page }) => {
 
     await page.click("text=About");
     await expect(page).toHaveURL("/about");
-    await expect(page.locator("text=About me")).toBeVisible();
+    await expect(page.getByText("About me,", { exact: true })).toBeVisible();
 });
