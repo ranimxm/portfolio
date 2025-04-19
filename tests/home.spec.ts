@@ -3,7 +3,7 @@ import { test, expect } from "@playwright/test";
 test("home: has title", async ({ page }) => {
   await page.goto("/");
   await page.waitForTimeout(2000);
-  await expect(page.locator("text=Building logic,")).toBeVisible();
+  await expect(page.getByText("Building logic,", { exact: true })).toBeVisible();
 });
 
 test("home: click on project-item", async ({ page }) => {
