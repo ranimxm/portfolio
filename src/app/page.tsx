@@ -13,15 +13,14 @@ export default function Home() {
         <div className="text-white w-full flex flex-col text-h2 md:text-l">
           <div className="flex flex-col gap-2">
             <div className="flex flex-col">
-              <LoadinText text="Turning pixels" />
-              <LoadinText text="into playful" />
-              <LoadinText text="experiences"/> 
+              <LoadinText text="Building logic," />
+              <LoadinText text="designing empathy"/>
             </div>
             <LoadinText className="italic text-h2 md:text-xl" text="Ranim Mohammad" />
           </div>
           <div className="md:text-h1 text-h3 flex gap-2 justify-end items-center">
-            <p>scroll</p>
-            <ArrowDown />
+            <LoadinText text="Scroll" />
+            <LoadinText text={<ArrowDown />} />
           </div>
         </div>
       </section>

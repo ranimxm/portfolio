@@ -1,54 +1,96 @@
 [
     {
         "id": 1,
+        "title": ["Recreated Twitter"],
+        "slug": "recreated-twitter-partly-using-mongodb",
+        "framework": "MongoDB, NodeJS",
+        "hoverColor": "#1b8ca6",
+        "summary": "In my second year of Applied University I got a challenge to recreate a website, where Twitter was chosen, simply because it had a challenging layout. A simple Twitter-like app built with MongoDB and NodeJS. Users can post and view tweets.",
+        "thumbnail": "/images/projects/twitter/twitter-1.webp",
+        "images": [
+            {
+                "type": "desktop",
+                "src": "/images/projects/twitter/twitter-1.webp"
+            },
+            {
+                "type": "desktop",
+                "src": "/images/projects/twitter/twitter-2.webp"
+            },
+            {
+                "type": "desktop",
+                "src": "/images/projects/twitter/twitter-3.webp"
+            }
+        ],
+        "video": "/images/projects/twitter/twitter-video.mp4",
+        "link": "https://twittah.onrender.com",
+        "description": "As part of a school challenge, I was tasked with recreating a website, and I decided to take on the challenge of recreating Twitter. Initialy, my plan was to make use of a JSON file as a data source for the website. However, my teacher recommended using MongoDB as a database solution, and I followed his suggestion. With MongoDB being connected into the project, the website became capable of posting tweets and displaying the data on the page. It provided users to create their thoughts in a familiar Twitter-like environment. This project copies basic Twitter features using MongoDB and NodeJS. Challenges included learning how to use a database and making the design simple and easy to use. This project helped me understand how to connect a database to a website and improve my backend development skills. Also during this process I learned how to analyse websites and use their styling to my advantage, in this case, Twitter. It was a great learning experience, it was a first step into understanding the backend and frontend of the website. "
+    },
+    {
+        "id": 2,
         "title": ["Music Application"],
         "slug": "music-application",
         "framework": "React Native",
         "hoverColor": "#9985c5",
-        "summary": "A music player app built with React Native. It lets you play songs, pause, and manage playlists.",
-        "columns": 2,
-        "image": "/images/projects/music/music-app-1.png",
-        "images": ["/images/projects/music/music-app-1.png", "/images/projects/music/music-app-2.png"],
-        "description": "This app is made with React Native to learn mobile app development. It includes basic controls like play, pause, and stop. Users can adjust the volume, shuffle songs, and repeat tracks. The main challenge was setting up all the tools correctly and fixing issues during development. Creating the APK file for Android took time because I had to learn new steps. This project taught me how to solve problems and manage app features better."
-    },
-    {
-        "id": 2,
-        "title": ["Recreated Twitter partly using MongoDB"],
-        "slug": "recreated-twitter-partly-using-mongodb",
-        "framework": "MongoDB, NodeJS",
-        "hoverColor": "#1b8ca6",
-        "summary": "A simple Twitter-like app built with MongoDB and NodeJS. Users can post and view tweets.",
-        "columns": 1,
-        "image": "/images/projects/twitter/twitter-1.png",
-        "images": ["/images/projects/twitter/twitter-1.png", "/images/projects/twitter/twitter-2.png", "/images/projects/twitter/twitter-3.png"],
-        "link": "https://twittah.onrender.com",
-        "description": "This project copies basic Twitter features using MongoDB and NodeJS. At first, I used JSON for data storage, but I switched to MongoDB after feedback. The app shows tweets and stores them in the database. Challenges included learning how to use a database and making the design simple and easy to use. This project helped me understand how to connect a database to a website and improve my backend development skills."
+        "summary": "In my second year of Applied University, I challenged myself to make a music player in React Native for a fan community. Build to learn mobile development. It includes basic controls like play, pause, and stop. Users can adjust the volume, shuffle songs, and repeat tracks.",
+        "thumbnail": "/images/projects/music/music-app-1.webp",
+        "images": [
+            {
+                "type": "mobile",
+                "src": "/images/projects/music/music-app-1.webp"
+            }, 
+            {
+                "type": "mobile",
+                "src": "/images/projects/music/music-app-2.webp"
+            }
+        ],
+        "video": "/images/projects/music/music-app-video.mp4",
+        "description": "As a devoted fan of a particular fandom, a friend approached me with an interesting request: to create a music app for our fandom's community. That is why I took on this challenge as a exercise in my second year. This app is made with React Native to learn mobile app development. It includes basic controls like play, pause, and stop. Users can adjust the volume, shuffle songs, and repeat tracks. The main challenge was setting up all the tools correctly and fixing issues during development. Creating the APK file for Android took time because I had to learn new steps. This project taught me how to solve problems and manage app features better. I also learned how to use React Native and its libraries. This experience helped me understand mobile app development and how to create a user-friendly interface. I also learned how to work with audio files and implement features like volume control and shuffle. Overall, this project was a great learning experience for me, and I am proud of the final result."
     },
     {
         "id": 3,
         "title": ["AMW Veranda"],
         "slug": "amw-veranda",
-        "framework": "PHP, Bootstrap",
+        "framework": "Bootstrap, PHP",
         "hoverColor": "#84fee2",
-        "summary": "A client website made for a veranda company. It includes a contact form and language options.",
-        "columns": 1,
-        "image": "/images/projects/amw/amw-1.png",
-        "images": ["/images/projects/amw/amw-1.png", "/images/projects/amw/amw-2.png"],
-        "link": "http://amwveranda.nl",
-        "description": "I created this website for a company that sells verandas. The site includes a contact form where users can send messages and switch between languages. Hosting the site on GoDaddy was challenging because I had to figure out the deployment process. This project helped me learn more about building websites for real clients and solving hosting problems."
+        "summary": "A client website made for a veranda company. It includes a contact form and language options. ",
+        "thumbnail": "/images/projects/amw/amw-1.webp",
+        "images": [
+            {
+                "type": "desktop",
+                "src": "/images/projects/amw/amw-1.webp"
+            },
+            {
+                "type": "desktop",
+                "src": "/images/projects/amw/amw-2.webp"
+            }
+        ],
+        "description": "I had the opportunity to create a website for a company that specializes in making verandas. The website included some useful features to enhance user experience. One of the main functions of the website was to make users easily send emails and contact the company. I implemented a feature using PHP that allowed users to send feedback or any other message through the website. This made it convenient for users as they don't have to switch accounts or tabs. Another important feature I added to the website was the ability for users to choose their preferred language. This way, users could view the website content in the language they were comfortable with. Before coding our website, we first analyzed the user's preferences and the stakeholders, which then lead to defining the pain points and features. To make the website accessible to users, my partner and I hosted it on GoDaddy, a popular web hosting platform. GoDaddy provided reliable hosting services as well as good customer service in times of need."
     },
     {
         "id": 4,
-        "title": ["Note App with EJS"],
-        "slug": "note-app-with-ejs",
+        "title": ["Note Application"],
+        "slug": "note-application",
         "framework": "EJS, NodeJS",
         "hoverColor": "#fcfe8f",
-        "summary": "A note app built with EJS and NodeJS. It includes text recognition and note management features.",
-        "columns": 1,
-        "image": "/images/projects/ejs/ejs-2.png",
-        "images": ["/images/projects/ejs/ejs-1.png", "/images/projects/ejs/ejs-2.png"],
+        "summary": "In my third year of Applied University, I built a note app with EJS and NodeJS. It includes text recognition and note management features. It helps students gather evidence for their portfolio.",
+        "thumbnail": "/images/projects/ejs/ejs-3.webp",
+        "images": [
+            {
+                "type": "mobile",
+                "src": "/images/projects/ejs/ejs-1.webp"
+            },
+            {
+                "type": "mobile",
+                "src": "/images/projects/ejs/ejs-2.webp"
+            },
+            {
+                "type": "mobile",
+                "src": "/images/projects/ejs/ejs-3.webp"
+            }
+        ],
+        "video": "/images/projects/ejs/ejs-video.mp4",
         "link": "https://duocase.onrender.com",
-        "description": "This app allows users to take notes, upload images, and recognize text in pictures using Tesseract.js. The app was built with EJS and NodeJS. One challenge was managing how files are stored and displayed on the website. This project taught me how to use APIs and handle data between the frontend and backend."
+        "description": "For school I had to create a solution which helps students to gather evidence for their portfolio. Before continung with the solution, I followed the Double Daimond method to iterate through the process. I first analyzed the user's pain point using primary research methods, following with the secondary research. Afterwards I and a classmate brainstormed for ideas which ended up with a first product (a MVP in this case). The MVP was to create a note-app which generates texts based on the image you uploaded, and summarizes it. It's also able to record and transcribe as well as summarize the recording it uploaded. This way the time to write down a summary for a portfolio is less. It also helps to create a startpoint for documentation. I was responsible for the 'database' and adding images with text generator using tesseract.js. For this project I had to store notes as well as projects, which means a server was needed. Using NodeJS I was able to store files to their corresponded folders as well as storing objects inside a json file. To display the data which is stored properly as well as less as possible files, I used EJS. To my knowledge, it almost works the same as jinja, however ejs uses javascript as jinja works for python. This project was a great learning experience for me. I learned how to use EJS and NodeJS together to create a web application. I also learned how to use tesseract.js to extract text from images. This project helped me understand how to create a web application that can be used by students to gather evidence for their portfolio."
     },
     {
         "id": 5,
@@ -56,10 +98,23 @@
         "slug": "first-version-of-my-portfolio",
         "framework": "VueJS",
         "hoverColor": "#0166ff",
-        "summary": "The first version of my portfolio website. It showcases my projects and skills.",
+        "summary": "The first version of my portfolio. It showcases my projects and skills.",
         "columns": 1,
-        "image": "/images/projects/portfolio/portfolio-1.png",
-        "images": ["/images/projects/portfolio/portfolio-1.png", "/images/projects/portfolio/portfolio-2.png", "/images/projects/portfolio/portfolio-3.png"],
+        "thumbnail": "/images/projects/portfolio/portfolio-1.webp",
+        "images": [
+            {
+                "type": "desktop",
+                "src": "/images/projects/portfolio/portfolio-1.webp"
+            },
+            {
+                "type": "desktop",
+                "src": "/images/projects/portfolio/portfolio-2.webp"
+            },
+            {
+                "type": "desktop",
+                "src": "/images/projects/portfolio/portfolio-3.webp"
+            }
+        ],
         "link": "https://firstportfolio-r.vercel.app",
         "description": "This was the first version of my portfolio. I used VueJS to build a responsive website that showed my work and skills. A challenge was making sure the website worked well on different browsers and devices. This project helped me understand how to create a portfolio for potential clients or employers."
     }
